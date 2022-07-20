@@ -1,12 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHopify Templalte</title>
+    <!--meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts icon -->
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">   
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media css -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Single Product Page!</title>
   </head>
   <body>
-    <h2>This is a tempalate</h2>
+    
+
+      
+    <!-- section start ------------------------->
+      <main>
+        <section class="single_product">
+          <div class="container">
+
+            <!-- heading -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="common_heading">
+                  <h2>FEATURED PRODUCT</h2>
+                </div>
+              </div>
+            </div>
+            <!-- heading -->
+
+
+          
+            <div class="row">
+              <!-- product image part-->
+              <div class="col-lg-6">
+                <div class="product_img">
+                  <div class="product_large_img">
+                    <img src="images/download (4).webp" alt="">
+                  </div>
+
+                  <div class="product_small_img">
+
+                    <div class="small_img">
+                      <img src="images/download (4).webp" alt="" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small_img">
+                      <img src="images/download (6).webp" alt="" onclick="showImg(this.src)">
+                    </div>
+                    <div class="small_img">
+                      <img src="images/download (7).webp" alt="" onclick="showImg(this.src)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!-- product image part-->
+
+
+              <!-- details part-->
+              <div class="col-lg-6">
+                <div class="product_details">
+
+                  <div class="product_details_top">
+
+                    <!-- title -->
+                    <div class="product_details_title">
+                      <h6>mia rebel moda</h6>                     
+                      <h3>abito adele</h3>
+                      <span>sku:  0090</span>                     
+                    </div>
+
+                    <!-- ratings -->
+                    <div class="rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star five" aria-hidden="true"></i>
+                      <span>Review[</span><span>6</span><span>]</span>
+                    </div>
+                  </div>
+            
+                  <!-- product_pricing -->
+                  <div class="product_pricing">
+                    <span class="line_through">$110</span>
+                    <span class="sale_price">$90</span>
+                  </div>
+
+                   <!-- product_color -->
+                  <div class="product_color">
+                    <div class="color_name common_title">
+                      <span>Colore: verde acqua</span>
+                    </div>
+                    <div class="color_img d-flex">
+                      <img src="./images/download (6).webp" alt="">
+                      <img src="./images/download (7).webp" alt="" >
+                    </div>
+                  </div>
+                   <!-- product_color -->
+
+                   <!-- product_material -->
+                  <div class="product_material">
+                    <div class="material_lavel common_title">
+                      <span>material:</span>                                    
+                    </div>
+                    <div class="material_name">                     
+                    <p>cotone elastico</p>
+                    </div>
+                  </div>
+                  <!-- product_material -->
+
+                  <!-- product_size -->
+                  <div class="product_size">
+                    <div class="size_name common_title">
+                      <span>Taglia:</span>
+                    </div>
+                    <div class="size_number">
+                      <ul>
+                        <li><div><span>L</span></div></li>
+                        <li><div><span>M</span></div></li>
+                        <li><div><span>X</span></div></li>
+                        <li><div><span>XL</span></div></li>
+                        <li><div><span>XXL</span></div></li>
+                        <li><div><span>XXL</span></div></li>
+                                              
+                      </ul>
+                    </div>                   
+                  </div>
+                  <!-- product_size -->
+
+                  <!-- product_quantity -->
+                  <div class="product_quantity">
+                    <div class="quantity_name common_title">
+                      <span>Quantity: </span>
+                    </div>
+
+                    <div class="product_cart_btn  ">
+                    <form action="" class="">
+
+                      <div class="quantity ">
+                        <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                        <input id="number" value="1"   type="number"/>
+
+                        <div class="value-button increase_" id="" value="Increase Value">+</div>
+                      </div>
+                  
+                
+                      <div class="product_cart_btn d-flex ">
+                      <div class="cart_submit_btn common_btn">
+                        <button type="submit"  class="btn btn_hover"><span class="btn_hover_span">ADD TO CART</span></button>
+                      </div> 
+                      <div class="wishlist_btn common_btn">
+                        <button type=""  class="btn btn_hover"><span class="btn_hover_span">Buy Now</span></button>
+                  
+                      </div>                                        
+                      </div>                                        
+                    </form>
+
+                 
+                  </div>
+                   </div>
+                  
+
+                   <div class="join_btn">
+                    <span>Is Your Size/Color Sold Out?</span><span><a href="#">View Product Details</a></span>
+                   </div>
+
+                </div>
+              </div>
+              <!-- details part end============-->
+
+
+
+
+            </div>
+          </div>
+        </section>
+      </main>
+   <!-- section end ------------------------->
+
+
+
+
+
+  <!-- Bootstrap JS link -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Custom js link  -->
+  <script src="js/script.js"></script>
+ 
+    
   </body>
 </html>
