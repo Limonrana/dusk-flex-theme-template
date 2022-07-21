@@ -1,0 +1,62 @@
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {  }
+
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    article.card {
+        margin-bottom: 30px;
+    } 
+    .story_heading p {
+        letter-spacing: 1px;
+        padding: 2% 16%;
+    }
+    .footer_newsletter {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer_form .form-control {
+        width: 50%;
+        display: inline;
+    }
+ }
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* story */
+    .story_heading p {
+        padding: 3% 8%;
+    }
+  
+    .footer_form .form-control {
+        width: 60%;
+    }
+    .currency_select {
+        text-align: center;
+    }
+
+    .powered {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    footer .payment_method {
+        text-align: center;
+    }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {    
+    .footer_form .form-control {
+        width: 80%;
+    }
+  
+}
+
+
+

@@ -1,201 +1,256 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!--meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopify template</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css"/>
 
-    <!-- fonts icon -->
-    <link rel="stylesheet" href="fonts/fontawesome/css/all.css">   
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Custom css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Media css -->
-    <link rel="stylesheet" href="css/media.css">
+    <!-- font awesome -->
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
-    <title>Single Product Page!</title>
+
   </head>
   <body>
-    
+    <main>
 
-      
-    <!-- section start ------------------------->
-      <main>
-        <section class="single_product">
-          <div class="container">
 
-            <!-- heading -->
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="common_heading">
-                  <h2>FEATURED PRODUCT</h2>
-                </div>
+
+      <!-- article section  start===============================-->
+      <section class="article_section">
+        <div class="container">
+
+          <!-- section heading -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="common_heading">
+                <h2 class="main_heading">FEATURED ARTICLE</h2>
               </div>
             </div>
-            <!-- heading -->
+            </div>
 
-
-          
-            <div class="row">
-              <!-- product image part-->
-              <div class="col-lg-6">
-                <div class="product_img">
-                  <div class="product_large_img">
-                    <img src="images/download (4).webp" alt="">
+          <!-- article1 row-->
+          <div class="row">            
+            <!-- article1 -->
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="article_full_content">
+                  <div class="feature_img">
+                    <img src="./assets/images/background.svg" alt="">
+                    <div class="article_feature_img_overlay"></div>
                   </div>
-
-                  <div class="product_small_img">
-
-                    <div class="small_img">
-                      <img src="images/download (4).webp" alt="" onclick="showImg(this.src)">
+                  <div class=" card-body article_body ">
+                    <a href="#"><h2 class="card-title">Post's Name</h2></a>
+                    <p class="card-text">Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.</p>
+                    <div class="read_more_btn">
+                      <a href="#">Read More</a>
                     </div>
-                    <div class="small_img">
-                      <img src="images/download (6).webp" alt="" onclick="showImg(this.src)">
-                    </div>
-                    <div class="small_img">
-                      <img src="images/download (7).webp" alt="" onclick="showImg(this.src)">
-                    </div>
-
                   </div>
                 </div>
-              </div>
-              <!-- product image part-->
+              </article>
+            </div>
+            <!-- article1 -->
 
-
-              <!-- details part-->
-              <div class="col-lg-6">
-                <div class="product_details">
-
-                  <div class="product_details_top">
-
-                    <!-- title -->
-                    <div class="product_details_title">
-                      <h6>mia rebel moda</h6>                     
-                      <h3>abito adele</h3>
-                      <span>sku:  0090</span>                     
-                    </div>
-
-                    <!-- ratings -->
-                    <div class="rating">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <i class="fa fa-star five" aria-hidden="true"></i>
-                      <span>Review[</span><span>6</span><span>]</span>
+            <!-- article2 -->
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="article_full_content">
+                  <div class="feature_img">
+                    <img src="./assets/images/background.svg" alt="">
+                    <div class="article_feature_img_overlay"></div>
+                  </div>
+                  <div class=" card-body article_body ">
+                    <a href="#"><h2 class="card-title">Post's Name</h2></a>
+                    <p class="card-text">Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.</p>
+                    <div class="read_more_btn">
+                      <a href="#">Read More</a>
                     </div>
                   </div>
-            
-                  <!-- product_pricing -->
-                  <div class="product_pricing">
-                    <span class="line_through">$110</span>
-                    <span class="sale_price">$90</span>
-                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- article2 -->
 
-                   <!-- product_color -->
-                  <div class="product_color">
-                    <div class="color_name common_title">
-                      <span>Colore: verde acqua</span>
-                    </div>
-                    <div class="color_img d-flex">
-                      <img src="./images/download (6).webp" alt="">
-                      <img src="./images/download (7).webp" alt="" >
-                    </div>
+            <!-- article3 -->
+            <div class="col-lg-4">
+              <article class="card">
+                <div class="article_full_content">
+                  <div class="feature_img">
+                    <img src="./assets/images/background.svg" alt="">
+                    <div class="article_feature_img_overlay"></div>
                   </div>
-                   <!-- product_color -->
-
-                   <!-- product_material -->
-                  <div class="product_material">
-                    <div class="material_lavel common_title">
-                      <span>material:</span>                                    
-                    </div>
-                    <div class="material_name">                     
-                    <p>cotone elastico</p>
+                  <div class=" card-body article_body ">
+                    <a href="#"><h2 class="card-title">Post's Name</h2></a>
+                    <p class="card-text">Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers. You can check out Shopify’s ecommerce blog for inspiration and advice for your own store and blog.</p>
+                    <div class="read_more_btn">
+                      <a href="#">Read More</a>
                     </div>
                   </div>
-                  <!-- product_material -->
+                </div>
+              </article>
+            </div>
+            <!-- article3 -->        
+          </div>
+          <!-- article1 row-->
 
-                  <!-- product_size -->
-                  <div class="product_size">
-                    <div class="size_name common_title">
-                      <span>Taglia:</span>
-                    </div>
-                    <div class="size_number">
-                      <ul>
-                        <li><div><span>L</span></div></li>
-                        <li><div><span>M</span></div></li>
-                        <li><div><span>X</span></div></li>
-                        <li><div><span>XL</span></div></li>
-                        <li><div><span>XXL</span></div></li>
-                        <li><div><span>XXL</span></div></li>
-                                              
-                      </ul>
-                    </div>                   
-                  </div>
-                  <!-- product_size -->
+          <!-- button -->
+          <div class="article_btn common_btn">
+          <button type=""  class="btn btn_hover"><span class="btn_hover_span">VIEW ALL ARTICLES</span></button>      
+          </div> 
 
-                  <!-- product_quantity -->
-                  <div class="product_quantity">
-                    <div class="quantity_name common_title">
-                      <span>Quantity: </span>
-                    </div>
+        </div>
+      </section>
+      <!-- article section  end=================================-->
 
-                    <div class="product_cart_btn  ">
-                    <form action="" class="">
 
-                      <div class="quantity ">
-                        <div class="value-button decrease_" id="" value="Decrease Value">-</div>
-                        <input id="number" value="1"   type="number"/>
-
-                        <div class="value-button increase_" id="" value="Increase Value">+</div>
-                      </div>
-                  
-                
-                      <div class="product_cart_btn d-flex ">
-                      <div class="cart_submit_btn common_btn">
-                        <button type="submit"  class="btn btn_hover"><span class="btn_hover_span">ADD TO CART</span></button>
-                      </div> 
-                      <div class="wishlist_btn common_btn">
-                        <button type=""  class="btn btn_hover"><span class="btn_hover_span">Buy Now</span></button>
-                  
-                      </div>                                        
-                      </div>                                        
-                    </form>
-
-                 
-                  </div>
-                   </div>
-                  
-
-                   <div class="join_btn">
-                    <span>Is Your Size/Color Sold Out?</span><span><a href="#">View Product Details</a></span>
-                   </div>
-
+      <!-- story_section   start================================-->
+      <section class="story_section">
+        <div class="story_section_overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="story_content">
+                <div class="story_heading common_heading ">
+                  <h2 class="main_heading ">TELL YOUR STORY</h2>
+                  <p class="common_paragraph ">Add your own custom content to give more information about your store, availability details...</p>
                 </div>
               </div>
-              <!-- details part end============-->
-
-
-
-
             </div>
           </div>
-        </section>
-      </main>
-   <!-- section end ------------------------->
+        </div>
+      </section>
+      <!-- story_section  end===================================-->
 
 
+      <!-- pre_footer section  start============================-->
+      <section class="pre_footer">
+        <div class="container">
+          <div class="row">
+
+            <!-- item1 -->
+            <div class="col-xl-4 col-md-6">
+              <div class="footer_about">
+                <div class="footer_about_heading footer_heading">
+                  <h3 class="">ABOUT THE SHOP</h3>
+                  <p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- item2 -->
+            <div class="col-xl-4 col-md-6">
+              <div class="footer_menu">
+                <div class="footer_menu_heading footer_heading">
+                  <h3>FOOTER MENU</h3>
+                </div>
+                <div class="footer_menu_list">
+                  <ul>
+                    <li><a href="#">Privacy & Cookie policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping & Return</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+                
+            <!-- item3 -->
+            <div class="col-xl-4 col-md-12">
+              <div class="footer_newsletter">
+                <div class="footer_newsletter_heading footer_heading footer_about_heading">
+                  <h3>NEWSLETTER</h3>
+                  <p class="">Subscribe to receive updates, access to exclusive deals, and more.</p>
+                </div>
+                <div class="footer_form">
+                  <form action="#">
+                    <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                    <div class="common_btn">
+                      <button type="submit" class="btn btn_hover"><span class="btn_hover_span">Subscribe</span></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
 
 
+          </div>
+        </div>
+      </section>
+      <!-- pre_footer section  end==============================-->
 
-  <!-- Bootstrap JS link -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
 
-  <!-- Custom js link  -->
-  <script src="js/script.js"></script>
+      <!-- footer section  end==================================-->
+      <footer >
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="currency_select">
+                <form action="#">
+                  <select name="" id="">
+                    <option value="aed">AED</option>
+                    <option value="aud">AUD</option>
+                    <option selected value="bdt">BDT</option>
+                    <option value="cad">CAD</option>
+                    <option value="chf">CHF</option>
+                    <option value="czk">CZK</option>
+                    <option value="dkk">DKK</option>
+                    <option value="eur">EUR</option>
+                    <option value="gbp">GBP</option>
+                    <option value="hkd">HKD</option>
+                    <option value="ils">ILS</option>
+                    <option value="jpy">JPY</option>
+                    <option value="krw">KRW</option>
+                    <option value="myr">MYR</option>
+                    <option value="nzd">NZD</option>
+                    <option value="pln">PLN</option>
+                    <option value="sek">SEK</option>
+                    <option value="usd">USD</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="powered">
+                <a href="#">&copy; THEME DEVELOPMENT KING <br> <span>Powered by Shopify</span></a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="payment_method ">
+                <img src="./assets/images/image (3).svg" alt="">
+                <img src="./assets/images/image (4).svg" alt="">
+                <img src="./assets/images/image (5).svg" alt="">
+                <img src="./assets/images/image (6).svg" alt="">
+                <img src="./assets/images/image (7).svg" alt="">
+                <img src="./assets/images/image (8).svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer section  end=================================-->
+
+    </main>
  
-    
+    <!--bootstrap js cdn link==================================-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <!--bootstrap js cdn link==================================-->
+   
+    <!--custom js link=========================================-->
+    <link rel="stylesheet" href="./assets/js/script.js">
+    <!--custom js link=========================================-->
   </body>
 </html>

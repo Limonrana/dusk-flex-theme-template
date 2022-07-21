@@ -1,0 +1,346 @@
+
+/* ===========common start================== */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1c1b1b ;
+
+    
+}
+
+img{
+   
+    max-width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 70px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+
+
+/*============ CSS OF COMMON PART=========*/
+
+/*SECTION HEADING */
+.common_heading  {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sub_heading {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    margin-bottom: 15px;
+}
+.main_heading{
+	font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    
+}
+
+.common_paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    line-height: 22px;
+}
+
+
+
+/* BUTTON */
+span.btn_hover_span {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    color: #1c1b1b;
+   
+    
+}
+.common_btn button {
+    padding: 10px 40px 10px 40px;
+    border: 1px solid black;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.common_btn .btn {
+    border-radius: 0 !important; 
+}
+.common_btn button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+.btn_hover{
+
+    padding: 15px 100px;
+    margin:10px 4px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+}
+.btn_hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: block;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform 0.7s cubic-bezier(1, 0, 0, 1)
+}
+    
+.btn_hover:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1)
+ }
+.btn_hover_span{
+    transition: .7s ease-in-out !important;
+}
+.btn_hover:hover .btn_hover_span{
+        position: relative;
+        z-index: 4654;
+        color: white;
+}
+/*============ CSS OF COMMON PART=========*/
+
+
+
+/*========Section css start============= */
+
+
+/* article section */
+.article{}
+article.card {
+    /* border: none !important; */
+    border-radius: 0!important;
+}
+.article_full_content{}
+.article_full_content:hover .feature_img img{
+    transform: scale(1.2);
+}
+.feature_img{
+    position: relative;
+    padding:40px 0;
+    overflow: hidden;
+}
+
+.article_feature_img_overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: .4;
+    top: 0;
+    left: 0;
+}
+.feature_img img{
+    transition: 3s ease-in-out;
+}
+.article_body {
+    padding: 25px 15px 20px 20px;
+}
+.article_body h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+}
+.article_body p {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #1c1b1b;
+    line-height: 22px;
+    margin: 15px 0px;
+}
+.article_body .read_more_btn{}
+.article_body .read_more_btn a{
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;;
+    font-weight: 400;
+    line-height: 23px;
+    color: #1c1b1b;
+    text-decoration: underline;
+}
+.article_btn {
+    text-align: center;
+    margin-top: 50px;
+}
+.article_btn  button {
+    padding: 10px 30px 10px 30px;
+
+}
+/* article section */
+
+
+/* story_section */
+.story_section{
+    background-image: url('../images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 220px 0;
+    position: relative;
+}
+.story_section_overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .4;
+}
+.story_content{
+    position: relative;
+    z-index: 55;
+}
+.story_heading {}
+.story_heading h2{
+    color: #fff !important;
+}
+.story_heading p {
+    letter-spacing: 1px;
+    padding: 2% 28% ;
+}
+/* story_section */
+
+
+/* pre_footer section*/
+.pre_footer{
+    padding: 80px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+.footer_about{}
+.footer_about_heading {}
+.footer_heading h3{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    margin-bottom: 15px;
+}
+.footer_about_heading p{
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 23px;
+    color: #6a6a6a;
+ 
+}
+.footer_menu_list{}
+.footer_menu_list ul{
+    list-style: none;
+    padding: 0;
+}
+.footer_menu_list ul li {
+    
+}
+.footer_menu_list ul li a {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+    color: #1c1b1b;
+    padding: 4px 0;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer_form .form-control {
+    padding: 0.700rem .75rem;
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+.footer_form .form-control:focus {
+
+    box-shadow: none !important;
+    border-color: none !important;
+    outline: 0 !important;
+    border-color: #ced4da;
+
+}
+input.form-control::placeholder {
+    font-size: 13px;
+    color: #6a6a6a;
+}
+/* pre_footer section*/
+
+
+/* footer section*/
+footer{
+    padding: 20px 0;
+    border: none;
+}
+.currency_select{
+    padding-bottom: 20px;
+}
+.currency_select select {
+    text-align: center;
+    border: none;
+    color: #6a6a6a;
+    font-size: 12px;
+}
+.currency_select select:focus {
+    outline: none;
+    border: none;
+}
+footer .payment_method{
+    text-align: right;
+}
+.powered{}
+.powered a{
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #1c1b1b;
+    letter-spacing: 3px;
+    
+}
+.powered a:hover{
+    color: #6a6a6a;
+}
+.powered a span{
+    letter-spacing: 1px;
+}
+/* footer section*/
+
+
+
+/*========Section css start============= */
+
+  
