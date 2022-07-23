@@ -14,22 +14,22 @@ Dusk Flex Theme Template represents a HTML-first, Bootstrap 5 and jQuery/JavaScr
 - **Please make sure every section is responsive**
 - **Finaly, before push the code, please create an new branch with task name. EX: limon-task-1**
 
-Say you're building a new theme off Dusk Flex template but you still want to be able to pull in the latest changes, you can add a remote `upstream` pointing to this Dusk Flex repository.
+Say you're building a new template section off dusk flex template but you still want to be able to pull in the latest changes, you can add a remote `upstream` pointing to this dusk flex template repository.
 
-1. Navigate to your local theme folder.
+1. Navigate to your local template folder.
 2. Verify the list of remotes and validate that you have both an `origin` and `upstream`:
 
 ```sh
 git remote -v
 ```
 
-3. If you don't see an `upstream`, you can add one that points to Shopify's Dusk Flex repository:
+3. If you don't see an `upstream`, you can add one that points to dusk flex template repository:
 
 ```sh
 git remote add upstream https://github.com/Limonrana/dusk-flex-theme-template.git
 ```
 
-4. Pull in the latest Dawn changes into your repository:
+4. Pull in the latest dusk flex template changes into your repository:
 
 ```sh
 git fetch upstream
