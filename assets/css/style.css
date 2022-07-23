@@ -1,0 +1,304 @@
+
+/* ===========common start================== */
+
+img{
+   
+    max-width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 70px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+/*============ CSS OF COMMON PART=========*/
+
+/*SECTION HEADING */
+.common-heading  {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sub-heading {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    margin-bottom: 15px;
+}
+.main-heading{
+	font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    
+}
+
+.common-paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    line-height: 22px;
+}
+
+
+
+/* BUTTON */
+span.btn-hover-span {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    color: #1c1b1b;
+   
+    
+}
+.common-btn button {
+    padding: 10px 40px 10px 40px;
+    border: 1px solid black;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.common-btn .btn {
+    border-radius: 0 !important; 
+}
+.common-btn button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-hover{
+
+    padding: 15px 100px;
+    margin:10px 4px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+}
+.btn-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: block;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform 0.7s cubic-bezier(1, 0, 0, 1)
+}
+    
+.btn-hover:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+ }
+.btn-hover-span{
+    transition: .7s ease-in-out !important;
+}
+.btn-hover:hover .btn-hover-span{
+        position: relative;
+        z-index: 4654;
+        color: white;
+}
+/*============ CSS OF COMMON PART=========*/
+
+
+
+/*========Section css start============= */
+
+/* newsletter-section */
+.newsletter-section{
+    background-image: url('../images/newsletter bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+    border-bottom: none;
+}
+.newsletter-section-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .4;
+}
+.newsletter-content{
+    position: relative;
+    z-index: 55;
+    margin-top: 50px;
+}
+.newsletter-heading .sub-heading{
+    color: #fff;
+}
+.newsletter-heading h2{
+    color: #fff !important;
+}
+.newsletter-heading p {
+    letter-spacing: 1px;
+    /* padding: 0% 25%; */
+}
+.newsletter-form{
+    margin-top: -30px;
+}
+
+.newsletter-form .form-control {
+    padding:9px;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: #cfcfcf;
+    width: 35%;
+    display: inline;
+}
+.newsletter-form .form-control:focus {
+
+    box-shadow: none !important;
+    border-color: none !important;
+    outline: 0 !important;
+    border-color: #cfcfcf;
+
+}
+input.form-control::placeholder {
+    font-size: 13px;
+    color: #fff;
+}
+.common-btn.newsletter-btn{
+    display: inline;
+}
+.common-btn.newsletter-btn button {
+    border-color: transparent;
+    background-color: #fff;
+    margin-left: 15px;
+}
+
+.newsletter-btn .btn:hover {
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+.newsletter-btn .btn:hover span{
+    color: #fff;
+}
+
+/*newsletter-section*/
+
+/*text-img-section*/
+.text-img-section {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: #efefef;
+}
+
+.text-img-content1 {
+    width: 50%;
+    order: 1;
+}
+.text-img-heading {
+    padding-left: 18%;
+    padding-right: 10%;
+}
+.text-img-content2{
+    width: 50%;
+    order: 2;   
+}
+.text-img-heading .common-paragraph{
+    color: #1c1b1b;
+}
+.text-img-button a{
+    color: #1c1b1b ;
+    text-decoration: underline;
+}
+
+/*text-img-section*/
+
+
+
+/* popup-video-section */
+.popup-video-section{
+    background-image: url('../images/play-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.section-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .4;
+    z-index: 1;
+}
+
+.modal-popup-content h2{
+  color: #fff;
+  position: relative;
+  z-index: 99;
+}
+
+.modal-popup-btn {
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    margin-top: -30px;
+}
+.modal-popup-btn button {
+    border: none;
+    background-color: transparent;
+    
+}
+.modal-popup-btn button svg{
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+}
+.modal-btn-close {
+    position: absolute;
+    top:8%;
+    right: 4%;
+}
+.btn-close-svg {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    background: transparent ;
+    border: 0;
+    border-radius: .375rem;
+    opacity: .5;
+}
+
+/* popup-video-section */
+
+/*========Section css end============= */
+
+
