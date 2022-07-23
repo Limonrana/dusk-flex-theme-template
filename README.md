@@ -1,4 +1,4 @@
-# dusk-flex-theme-template
+# Dusk Flex Theme Template
 
 [Getting started](#getting-started) |
 [New code submission](#new-code-submission) |
@@ -6,7 +6,7 @@
 
 ## Getting started
 
-Dusk Flex represents a HTML-first, Bootstrap 5 and jQuery/JavaScript-only-as-needed approach to theme development. It's Shopify's first source available theme with performance, flexibility, and [Online Store 2.0 features](https://www.shopify.com/partners/blog/shopify-online-store) built-in and acts as a reference for building Shopify themes.
+Dusk Flex Theme Template represents a HTML-first, Bootstrap 5 and jQuery/JavaScript-only-as-needed approach to theme development. It's Shopify's first source available theme with performance, flexibility, and [Online Store 2.0 features](https://www.shopify.com/partners/blog/shopify-online-store) built-in and acts as a reference for building Shopify themes.
 
 - **Download Or Pull the code before start project**
 - **Please use the hypen and prefix (WS--) for class name. EX: ws--heading-h1**
