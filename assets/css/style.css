@@ -1,3 +1,273 @@
-/* 
- * Your Own Style Goes to here  
-*/
+
+/* ===========common start================== */
+body{
+    background-color: #efefef;
+
+    
+}
+
+img{
+   
+    max-width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding: 70px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+
+
+/*============ CSS OF COMMON PART=========*/
+
+/*SECTION HEADING */
+.common-heading  {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.sub-heading {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    margin-bottom: 15px;
+}
+.main-heading{
+	font-size: 20px;
+    line-height: 33px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+    
+}
+
+.common-paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 22px;
+}
+
+
+
+/* BUTTON */
+span.btn-hover-span {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    transition: .7s ease-in-out !important;
+    color: white;
+    position: relative;
+    z-index: 4654;
+   
+    
+}
+.common-btn button {
+    padding: 10px 40px 10px 40px;
+    border: 1px solid black;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0 !important; 
+}
+
+.common-btn button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: block;
+    transform-origin: left top;
+    transform: scale(1, 1);
+    transition: transform 0.7s cubic-bezier(1, 0, 0, 1)
+}
+    
+.btn-hover:hover::before {
+    transform-origin: right top;
+    transform: scale(0, 1)
+ }
+.btn-hover:hover .btn-hover-span{
+        position: relative;
+        z-index: 4654;
+        color: black;
+}
+
+
+
+/* product details */
+/* slider-product-title a h2*/
+.slider-product-title{
+    
+}
+.slider-product-title h2{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #1c1b1b;
+    line-height: 20px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+.slider-product-pricing{
+
+}
+.slider-product-pricing p span{  
+    color: #f94c43;
+}
+.slider-product-pricing p{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #6a6a6a;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+/*============ CSS OF COMMON PART=========*/
+
+
+
+/*========Section css start============= */
+
+/* timeline section*/
+.timeline-content-bg{
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #969696;
+}
+.timeline-content-bg1{
+    background-image: url(../images/timeline.svg);
+}
+.timeline-content-bg2{
+    background-image: url(../images/timeline2.svg);
+}
+.timeline-content-bg3{
+    background-image: url(../images/timeline.svg);
+}
+.timeline-content1{
+    height: 400px;
+}
+.timeline-content2 {
+    background-color: white;
+    height: 100%;
+    padding: 60px;
+    align-items: end;
+    display: flex;
+}
+.timeline-btn {
+    margin-top: 50px;
+}
+.timeline-btn li button{
+    color: black;
+}
+.timeline-btn   .nav-link.active, .nav-pills .show>.nav-link {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000 !important;
+    background-color: transparent;
+    border-bottom: 1px solid #000 !important;
+}
+.timeline-btn  .nav-link {
+    color: #6a6a6a;
+    border-radius: 0 !important;
+}
+.timeline-btn li button:focus{
+    color: black;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+.timeline-btn li button.active:focus{
+    color: black;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+/* testimonial section*/
+.testimonial-section{
+    background-color: #eaeaea;
+}
+.testimonial-slider {
+    width: 550px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.testimonial-slider p{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    color: #1c1b1b;
+    line-height: 33px;
+}
+.testimonial-logo{
+    margin-top: 50px;
+}
+.testimonial-logo{
+    width: 15%;
+    margin: 70px auto 0;
+}
+
+/* shop-look */
+
+.shop-look-slider{
+    margin-top: -40px;
+}
+.slider-content-img{
+    background-color: #696969;
+    position: relative;
+}
+.slider-content-img-animation{
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
+.slider-animation-box1{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-animation-box2{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.slider-content-product{
+    padding: 50px;
+}
+.slider-content-product-wrapper{
+    width: 60%;
+}
+.slider-product-img img {
+    width: 100%;
+    margin-top: 20px;
+}
+.slider-product-btn button{
+    padding: 10px 30px;
+}
+
+/*========Section css end============= */
+
