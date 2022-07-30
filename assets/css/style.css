@@ -1,3 +1,322 @@
 /* 
  * Your Own Style Goes to here  
 */
+
+
+/*=========================================
+Common Css Are Here Start
+==========================================*/
+/* section heading */
+.ws--section-heading h2{ 
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #1c1b1b;      
+        font-weight: 500;     
+}
+
+/*=========================================
+Common Css Are Here End
+==========================================*/
+
+
+
+
+/*=========================================
+Css Of  Log in Page Are Here! 
+==========================================*/
+.ws--loginFrom-section{
+    background-color: #efefef;
+  
+}
+.ws--loginForm-heading .ws--allForm-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1c1b1b;
+
+}
+.ws--allForm-css input::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #6a6a6a;
+}
+.ws--allForm-css  .form-control {
+    padding: 0.6rem 0.75rem;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+
+}
+.ws--allForm-css .form-control:focus {
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    border-color: #1c1b1b;
+}
+.ws--login-form .input-pass{
+position: relative;
+}
+.ws--login-form .input-pass a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    color: #6a6a6a;
+    letter-spacing: 1px;
+}
+.ws--login-form .input-pass a:hover {
+    color: #1c1b1b;
+}
+.ws--allForm-css .login-btn button{
+   width: 100%;
+}
+.ws--allForm-css .ws--create-account p{
+   font-size: 14px;
+   color: #6a6a6a;
+   letter-spacing: 1px;
+}
+.ws--allForm-css .ws--create-account a{
+   color: #1c1b1b;
+}
+
+/* ws--rePass-section */
+.ws--rePass-section{
+    background-color: #efefef;
+}
+
+
+/*=========================================
+Css Of  Register Page Are Here! 
+==========================================*/
+.ws--registerFrom-section{
+    background-color: #efefef;
+    height: 100vh;
+}
+
+
+
+/*=========================================
+Css Of  Contact Page Are Here! 
+==========================================*/
+.ws--contactFrom-section{
+    background-color: #efefef;
+    height: 100vh;
+}
+.form-nameField{
+    width: 49%;
+}
+
+
+/*=========================================
+Media Query of   Contact Page Are Here! 
+==========================================*/
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .nameField-wraper {
+       display: block !important;
+    }
+    .form-nameField {
+        width: 100%;
+    }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+
+
+
+
+
+
+/*=========================================
+Css Of  menu and cart Page Are Here! 
+==========================================*/
+header {
+background-color: #f7f9ff;
+border-bottom: 1px solid #e9e7e7;
+box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+header .logo h1{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #1c1b1b;
+
+}
+.ws--header-content{
+    margin-bottom: 20px;
+}
+
+.ws--menuClose-btn {
+    padding: 1.2rem 2rem;
+}
+.ws--offCanvas-menu {
+    padding: 20px 10px;
+}
+.hamburger-menu .offcanvas{
+    background-color: #1c1b1b;
+    width: 350px;
+}
+
+/* collapsible plus btn */
+.ws--collapsible-plus-wrapper {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+}
+.ws--collapsible-plus{
+    position: relative;
+}
+.ws--collapsible-plus::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 2px;
+    top: -2px;
+    right: 10px;
+    background-color: #6a6a6a;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+.ws--collapsible-plus::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    top: 4px;
+    right: 4px;
+    background-color: #6a6a6a;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
+    opacity: 0;
+}
+.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::after, .ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
+    transform: translate(-50%,-50%) rotate(360deg);
+}
+/* collapsible plus btn */
+
+.ws--offCanvas-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.ws--offCanvas-menu ul .ws--parent-li {
+    border-bottom: 1px solid #6a6a6a;
+}
+.ws--offCanvas-menu ul .ws--parent-li a:hover {
+    color: #fff ;
+}
+.ws--offCanvas-menu ul li a {
+    color: #fff;
+    padding: 20px 10px;
+    display: block;
+    position: relative;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+.ws--second-child-menu {
+    border-left: 1px solid #6a6a6a;
+}
+
+.ws--second-child-menu li a {
+    padding: 7px 10px !important;
+}
+
+ul.ws--first-child-menu li a {
+    color: #ffffff80;
+    font-size: 12px;
+}
+
+/* ===========menu bar item  ========= */
+
+
+/* ===========menu cart item ========= */
+
+.ws--menuCart-content .offcanvas-header {
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #eaeaea;
+}
+.ws--menuCart-content .btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+
+}
+.ws--product-content {
+    padding: 1.5rem 1rem;
+}
+.cart-product-title h2{
+        font-size: 14px;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #1c1b1b;
+        margin: 8px 0;
+    
+}
+.cart-product-details p {
+    font-size: 11px;
+    letter-spacing: 2.8px;
+    color: #6a6a6a;
+    margin-bottom: 5px;
+}
+.ws--cart-details .ws--product-price{
+    margin-bottom: 12px;
+}
+.ws--cart-details .ws--product-price  p span {
+    color: #6a6a6a;
+    font-size: 14px;
+    font-weight: 400;
+}
+.cart-quantity .quantity  {
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    width: 60%;
+}
+.cart-quantity .quantity .value-button {
+    width: 15px;
+    height: 12px;
+    color: #6a6a6a6a;
+
+}
+.cart-quantity .remove-btn a {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    margin-right: -8px;
+    display: block;
+    text-decoration: underline;
+    color: #6a6a6a;
+}
+.ws--menuCart-footer {
+    border-top: 1px solid #efefef;
+    padding: 20px 30px 30px 30px;
+}
+.ws--menuCart-footer h3 {
+    font-size: 15px;
+    color: #1c1b1b;
+    letter-spacing: 2px;
+}
+.ws--menuCart-footer p {
+    font-size: 14px;
+    color: #6a6a6a;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+.ws--menuCart-footer .cart-checkout-btn button{ 
+    width: 100%;
+}
+
+
+
+
+
+
+
+
