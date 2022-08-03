@@ -1,3 +1,433 @@
 /* 
  * Your Own Style Goes to here  
 */
+
+
+/*=========================================
+Common Css Are Here Start
+==========================================*/
+/* section heading */
+.ws--section-heading h2{ 
+        font-size: 20px;
+        letter-spacing: 4px;
+        color: #1c1b1b;      
+        font-weight: 500;     
+}
+
+/*=========================================
+Common Css Are Here End
+==========================================*/
+
+
+
+
+/*=========================================
+Css Of  All Form's  Are Here! 
+==========================================*/
+
+.ws--allForm-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #1c1b1b;
+
+}
+.ws--allForm-css input::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #6a6a6a;
+}
+.ws--allForm-css  .form-control {
+    padding: 0.6rem 0.75rem;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+
+}
+.ws--allForm-css .form-control:focus {
+    background-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    border-color: #1c1b1b;
+}
+.ws--login-form .input-pass{
+position: relative;
+}
+.ws--login-form .input-pass a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    color: #6a6a6a;
+    letter-spacing: 1px;
+}
+.ws--login-form .input-pass a:hover {
+    color: #1c1b1b;
+}
+.ws--allForm-css .login-btn button{
+   width: 100%;
+}
+.ws--allForm-css .ws--create-account p{
+   font-size: 14px;
+   color: #6a6a6a;
+   letter-spacing: 1px;
+}
+.ws--allForm-css .ws--create-account a{
+   color: #1c1b1b;
+}
+
+
+/*=========================================
+Css Of  account Page Are Here! 
+==========================================*/
+
+
+/* account page title */
+.ws--accountPage-title{
+    background-color: #efefef;
+}
+
+.user-page-btn{
+    margin-bottom: 20px;
+}
+.user-page-btn span {
+    margin-right: 15px;
+}
+.user-page-btn a{
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #6a6a6a;
+    font-weight: 400;
+ 
+}
+
+.user-page-title h2 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #1c1b1b;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.user-page-title p {
+    font-size: 14px;
+    color: #1c1b1b;
+}
+
+/*order-section */
+
+.ws--accountPage-order{
+    background-color: #efefef;
+}
+.table > :not(:first-child) {
+    border-top: 1px solid #cfcfcf;
+}
+.ws--order-table  th {
+    font-size: 12px;
+    color: #6a6a6a;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+.ws--order-table  tbody td {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #1c1b1b;
+    line-height: 70px;
+}
+
+.address-heading h4 {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #6a6a6a;
+    border-bottom: 1px solid #cfcfcf;
+    line-height: 35px;
+}
+.address-details {
+    margin: 35px 0;
+}
+.address-details .ws--holderName{
+    margin: 35px 0;
+}
+.address-details p {
+    font-size: 14px;
+    color: #1c1b1b;
+    margin-bottom: 5px;
+}
+/* SINGLE COMMON BTN */
+a.single-simple-btn{
+    position: relative;
+}
+a.single-simple-btn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    transform: scale(1);
+    transform-origin: left center;
+    transition: transform .2s ease-in-out;
+}
+a.single-simple-btn:hover:after{
+    transform: scaleX(0);
+}
+/* SINGLE COMMON BTN */
+
+/*=========================================
+Media Query of  accountPage  Are Here! 
+==========================================*/
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .ws--accountPage-address {
+        margin-top: 30px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+
+
+/*=========================================
+Css Of  address Page Are Here! 
+==========================================*/
+.ws--myAddress-page-title{
+background-color: #efefef;
+}
+.new-addressAdd-btn{
+    margin-top: 40px;
+}
+.ws--addressPage-section{
+    background-color: #efefef;
+}
+.ws--addressPage-section .address-details {
+    margin-top: 35px;
+}
+
+.simple-edit-btn a {
+    font-size: 15px;
+    color: #1c1b1b;
+    margin: 0  15px 0 0;
+}
+/* modal */
+.custom-modal .modal-content {
+    border-radius: 0;
+}
+.custom-modal .modal-body{
+    padding: 0 30px 40px 30px;
+}
+.custom-modal .modal-header{
+    padding: 0;
+}
+.custom-modal .modal-header button {
+    padding: 10px 40px;
+}
+.custom-modal .ws--section-heading{
+    margin-bottom: 30px;
+}
+/*=========================================
+Media Query of address Page Are Here! 
+==========================================*/
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ws--sm-device{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+/*=========================================
+Css Of  cart Page Are Here! 
+==========================================*/
+.ws--cartPage-title{
+    background-color: #efefef;
+}
+/* Ordercontents */
+.ws--cartPage-Ordercontents{
+    background-color: #efefef;
+}
+.ws--cartDetails-table{}
+.ws--cartProduct-img {
+    width: 150px;
+}
+.ws--cartDetails-table  th {
+    font-size: 12px;
+    color: #6a6a6a;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.cart-product-title h2{
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: #1c1b1b;
+    margin: 8px 0;
+
+}
+.cart-product-details p {
+font-size: 11px;
+letter-spacing: 2.8px;
+color: #6a6a6a;
+margin-bottom: 5px;
+}
+.ws--cart-details .ws--product-price{
+margin-bottom: 12px;
+}
+.ws--cart-details .ws--product-price  p span {
+color: #6a6a6a;
+font-size: 14px;
+font-weight: 400;
+}
+
+.ws--cartDetails-table .cart-quantity .quantity  {
+    border: 1px solid #cfcfcf;
+    margin-bottom: 20px;
+    width: 45%;
+}
+.cart-quantity .quantity .value-button {
+    width: 15px;
+    height: 12px;
+    color: #6a6a6a6a;
+
+}
+.cart-quantity .remove-btn a {
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    margin-right: -8px;
+    display: block;
+    text-decoration: underline;
+    color: #6a6a6a;
+}
+.ws--cartDetails-table .last-child{
+    font-size: 14px;
+    color: #6a6a6a;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+
+}
+
+td.text-end p {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.ws--cartDetails-table label {
+    font-size: 14px;
+    color: #1c1b1b;
+}
+.ws--cartDetails-table .form-control {
+    padding: 0.6rem 0.75rem;
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #cfcfcf;
+}
+.ws--cartDetails-table .form-control:focus {
+
+    outline: 0;
+    box-shadow: none;
+}
+.footer-row{
+    border: transparent;
+}
+/* ws--estimate-section */
+.ws--estimate-section{
+    background-color: #efefef;
+}
+.estimate-wrapper {
+    border: 1px solid #cfcfcf;
+    padding: 0px 50px  60px 50px;
+}
+.estimate-heading {
+    margin-top: -12px;
+}
+.estimate-heading h2 {
+    display: inline;
+    background-color: #efefef;
+    padding: 4px 20px;
+}
+.estimate-form {
+    margin-top: 60px;
+}
+.estimate-form .form-control {
+    padding: 10px 75px 10px 10px;
+}
+/*=========================================
+Media Query of  CartPage  Are Here! 
+==========================================*/
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+
+
+/*=========================================
+Css Of  cart details Page Are Here! 
+==========================================*/
+.ws--cartDetails-title {
+    background-color: #efefef;
+}
+.ws--OrderDetails-contents{
+    background-color: #efefef;
+}
+
+.billing-ad{
+    margin-top: 65px;
+}
+.ws--table-footer{}
+
+.ws--table-footer td {
+    line-height: 40px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #6a6a6a;
+}
+
+.ws--order-details-table td{
+    vertical-align: middle;
+}
+
+td:empty{
+    border: none !important;
+}
+
+
+
+.ws--cartDetails-table td{
+    vertical-align: middle;
+}
+
+
+/*=========================================
+Media Query of  CartDetailsPage  Are Here! 
+==========================================*/
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
