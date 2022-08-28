@@ -7,10 +7,11 @@
 Common Css Are Here Start
 ==========================================*/
 /* section heading */
-.ws--section-heading h2{ 
-        font-size: 20px;
-        letter-spacing: 4px;
-        color: #1c1b1b;      
+body{
+    background-color: #efefef;
+}
+.ws--section-heading { 
+        font-size: 20px;   
         font-weight: 500;     
 }
 
@@ -21,302 +22,595 @@ Common Css Are Here End
 
 
 
-/*=========================================
-Css Of  Log in Page Are Here! 
-==========================================*/
-.ws--loginFrom-section{
-    background-color: #efefef;
-  
-}
-.ws--loginForm-heading .ws--allForm-title{
-    font-size: 14px;
-    font-weight: 400;
-    color: #1c1b1b;
-
-}
-.ws--allForm-css input::placeholder {
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: #6a6a6a;
-}
-.ws--allForm-css  .form-control {
-    padding: 0.6rem 0.75rem;
-    background-color: transparent;
-    border-radius: 0;
-    border: 1px solid #cfcfcf;
-
-}
-.ws--allForm-css .form-control:focus {
-    background-color: transparent;
-    outline: 0;
-    box-shadow: none;
-    border-color: #1c1b1b;
-}
-.ws--login-form .input-pass{
-position: relative;
-}
-.ws--login-form .input-pass a {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 13px;
-    color: #6a6a6a;
-    letter-spacing: 1px;
-}
-.ws--login-form .input-pass a:hover {
-    color: #1c1b1b;
-}
-.ws--allForm-css .login-btn button{
-   width: 100%;
-}
-.ws--allForm-css .ws--create-account p{
-   font-size: 14px;
-   color: #6a6a6a;
-   letter-spacing: 1px;
-}
-.ws--allForm-css .ws--create-account a{
-   color: #1c1b1b;
-}
-
-/* ws--rePass-section */
-.ws--rePass-section{
-    background-color: #efefef;
-}
-
-
-/*=========================================
-Css Of  Register Page Are Here! 
-==========================================*/
-.ws--registerFrom-section{
-    background-color: #efefef;
-    height: 100vh;
-}
 
 
 
 /*=========================================
-Css Of  Contact Page Are Here! 
+Css of index page Are Here start
 ==========================================*/
-.ws--contactFrom-section{
-    background-color: #efefef;
-    height: 100vh;
+.ws--featured-colllection-img {
+    height: 220px;
+    width: auto;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #cccccc;
 }
-.form-nameField{
-    width: 49%;
-}
-
-
-/*=========================================
-Media Query of   Contact Page Are Here! 
-==========================================*/
-
-/* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .nameField-wraper {
-       display: block !important;
-    }
-    .form-nameField {
-        width: 100%;
-    }
-}
-/* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
-
-
-
-
-
-
-
-/*=========================================
-Css Of  menu and cart Page Are Here! 
-==========================================*/
-header {
-background-color: #f7f9ff;
-border-bottom: 1px solid #e9e7e7;
-box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
-}
-header .logo h1{
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: #1c1b1b;
-
-}
-.ws--header-content{
-    margin-bottom: 20px;
-}
-
-.ws--menuClose-btn {
-    padding: 1.2rem 2rem;
-}
-.ws--offCanvas-menu {
-    padding: 20px 10px;
-}
-.hamburger-menu .offcanvas{
-    background-color: #1c1b1b;
-    width: 350px;
-}
-
-/* collapsible plus btn */
-.ws--collapsible-plus-wrapper {
-    position: absolute;
-    top: 40%;
-    right: 15px;
-}
-.ws--collapsible-plus{
-    position: relative;
-}
-.ws--collapsible-plus::before {
-    content: "";
-    position: absolute;
-    height: 15px;
-    width: 2px;
-    top: -2px;
-    right: 10px;
-    background-color: #6a6a6a;
-    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-}
-.ws--collapsible-plus::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 15px;
-    top: 4px;
-    right: 4px;
-    background-color: #6a6a6a;
-    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-}
-.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
-    opacity: 0;
-}
-.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::after, .ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
-    transform: translate(-50%,-50%) rotate(360deg);
-}
-/* collapsible plus btn */
-
-.ws--offCanvas-menu ul{
-    list-style: none;
-    padding: 0;
-}
-.ws--offCanvas-menu ul .ws--parent-li {
-    border-bottom: 1px solid #6a6a6a;
-}
-.ws--offCanvas-menu ul .ws--parent-li a:hover {
-    color: #fff ;
-}
-.ws--offCanvas-menu ul li a {
-    color: #fff;
-    padding: 20px 10px;
-    display: block;
-    position: relative;
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-}
-.ws--second-child-menu {
-    border-left: 1px solid #6a6a6a;
-}
-
-.ws--second-child-menu li a {
-    padding: 7px 10px !important;
-}
-
-ul.ws--first-child-menu li a {
-    color: #ffffff80;
-    font-size: 12px;
-}
-
-/* ===========menu bar item  ========= */
-
-
-/* ===========menu cart item ========= */
-
-.ws--menuCart-content .offcanvas-header {
-    padding: 1.2rem 2rem;
-    border-bottom: 1px solid #eaeaea;
-}
-.ws--menuCart-content .btn-close:focus {
-    outline: 0;
-    box-shadow: none;
-
-}
-.ws--product-content {
-    padding: 1.5rem 1rem;
-}
-.cart-product-title h2{
-        font-size: 14px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: #1c1b1b;
-        margin: 8px 0;
-    
-}
-.cart-product-details p {
-    font-size: 11px;
-    letter-spacing: 2.8px;
-    color: #6a6a6a;
-    margin-bottom: 5px;
-}
-.ws--cart-details .ws--product-price{
-    margin-bottom: 12px;
-}
-.ws--cart-details .ws--product-price  p span {
-    color: #6a6a6a;
-    font-size: 14px;
-    font-weight: 400;
-}
-.cart-quantity .quantity  {
-    border: 1px solid #efefef;
-    margin-bottom: 20px;
-    width: 60%;
-}
-.cart-quantity .quantity .value-button {
-    width: 15px;
-    height: 12px;
-    color: #6a6a6a6a;
-
-}
-.cart-quantity .remove-btn a {
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    font-weight: 400;
-    margin-right: -8px;
-    display: block;
-    text-decoration: underline;
-    color: #6a6a6a;
-}
-.ws--menuCart-footer {
-    border-top: 1px solid #efefef;
-    padding: 20px 30px 30px 30px;
-}
-.ws--menuCart-footer h3 {
-    font-size: 15px;
-    color: #1c1b1b;
-    letter-spacing: 2px;
-}
-.ws--menuCart-footer p {
-    font-size: 14px;
-    color: #6a6a6a;
-    letter-spacing: 1px;
-    margin: 15px 0;
-}
-.ws--menuCart-footer .cart-checkout-btn button{ 
+.ws--featured-colllection-img img{
+    height: 100%;
     width: 100%;
 }
 
 
 
+.ws--special-deal-content{
+    background-image: url(../images/shop-lock1.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    padding:  5px;
+}
+.ws--special-deal-content-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(84, 80, 80);
+    opacity: .6;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.ws--special-deal-content-box {
+    position: relative;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 80px 0;
+    min-height: 245px;
+}
+.ws--special-deal-content-box strong{
+    color: #ffffff;
+}.ws--special-deal-content-box p{
+    color: #ffffff;
+}
+
+
+
+.ws--icon-with-text-section-content {
+    background-color: #cccccc;
+    padding: 30px 8px;
+}
+.ws--icon-with-text-section-content strong {
+    font-weight: 900;
+    margin: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+.icon-btn .btn {
+    background-color: #bbafda;
+    padding: 4px 15px;
+}
+.icon-btn .btn:focus {
+    box-shadow: none;
+}
+
+/* faq */
+
+.ws--faq-heading h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.ws--faq a {
+    background-color: #e3e3e3;
+    border-bottom: 1px solid white !important;
+}
+.ws--faq .card-body {
+    padding: 1rem 1.5rem;
+}
+.ws--faq a{
+    padding: 18px 30px;
+    border-bottom: 1px solid black;
+}
+.ws--faq-collapsible-plus-wrapper {
+    position: absolute;
+    top: 55%;
+    left: 5px;
+}
+.ws--faq-collapsible-plus{
+    position: relative;
+}
+.ws--faq-collapsible-plus::before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 2px;
+    top: -8px;
+    left: 10px;
+    background-color: #6a6a6a;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+.ws--faq-collapsible-plus::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    top: -2px;
+    left: 4px;
+    background-color: #6a6a6a;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+.ws--faq a[aria-expanded=true] .ws--faq-collapsible-plus::before {
+    opacity: 0;
+    background-color: transparent;
+}
+.ws--faq a[aria-expanded=true] .ws--faq-collapsible-plus::after, 
+.ws--faq a[aria-expanded=true] .ws--faq-collapsible-plus::before {
+    transform:  rotate(180deg);
+}
+
+/*
+Media Query of   index Page Are Here! 
+==========================================*/
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .ws--special-deal-content {
+        margin-bottom: 25px;
+    }
+    .ws--icon-with-text-section-content {
+        margin-bottom: 25px;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .ws--faq-right-content {
+        margin-top: 30px;
+        text-align: center;
+    }
+  
+}
+
+
+
+/* 
+css of blog page are here -> start
+==================================== */
+.ws--blog-page-feature-section{
+    position: relative;
+}
+.ws--blog-page-feature-img{
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    transition: all 2s ease;
+    
+}
+.ws--blog-page-feature-img:hover{
+    transform: scale(1.1);
+  }
+.ws--blog-page-feature-content {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+.ws--blog-page-feature-content h1{
+    
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+/* blog section star*/
+article.card {
+
+    border-radius: 0!important;
+}
+.ws--posts-content:hover .ws--posts-img img{
+    transform: scale(1.2);
+}
+.ws--posts-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.ws--posts-img-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: .4;
+    top: 0;
+    left: 0;
+}
+.ws--posts-img img{
+    transition: 4s ease-in-out;
+}
+.ws--posts-content {
+    background-color: transparent;
+    margin-bottom: 30px;
+}
+.ws--posts-content .card-body {
+    padding: 25px 15px 20px 20px;
+}
+.ws--posts-content .card-body h2 {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #1c1b1b;
+}
+.ws--posts-content .card-body p {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: #1c1b1b;
+    line-height: 22px;
+    margin: 15px 0px;
+}
+.ws--read-more-btn a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #1c1b1b;
+    text-decoration: underline;
+}
+/* article section end */
+/* 
+css of blog page are here -> end
+==================================== */
 
 
 
 
 
+
+/* 
+css of single blog page are here -> start
+========================================== */
+
+.ws--single-blog-toolbar{
+    background-color: #1c1b1b;
+}
+.ws--toolbar-left span {
+    color: #7e7e7e;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.ws--toolbar-left .ws--post-title {
+    color: #fff;
+}
+
+.toolbar-share-icon {
+    margin-right: 120px;
+  
+}
+.toolbar-share-icon span {
+    color: #7e7e7e;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-right: 7px;
+}
+.toolbar-share-icon a{  
+    padding: 0 15px;   
+}
+
+.toolbar-next-prev-btn a{
+    color: #7e7e7e;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-right: 7px;
+    transition: .4s ease-in-out !important;
+
+}
+.toolbar-next-prev-btn span{
+  margin: 0px 7px 0 7px !important;
+
+}
+.toolbar-next-prev-btn a:hover {
+    color: #fff;
+}
+
+
+.toolbar-next-btn {
+ margin-left: 25px !important;
+    
+}
+
+.ws--single-blog-featured-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+.ws--single-blog-article-box article {
+    width: 65%;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #efefef;
+    margin-top: -100px;
+}
+
+.ws--single-post-meta P {
+    font-size: 12px;
+    line-height: 20px;
+    color: #6a6a6a;
+    letter-spacing: 3px;
+}
+
+.ws--single-post-title h2 {
+    font-size: 20px;
+    color: #1c1b1b;
+    font-weight: 500;
+}
+
+.ws--single-post-description p {
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+.ws--post-author span{
+    font-size: 12px;
+    color: #6a6a6a;
+    letter-spacing: 3px;
+}
+.ws--single-post-social-share {
+    display: inherit;
+}
+.ws--single-post-social-share span {
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    transition: .3s ease-in-out;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ws--single-post-social-share .facebook-share:hover{
+    background-color: #4469af;
+}
+.ws--single-post-social-share span:hover svg{
+    fill: white;
+}
+.ws--single-post-social-share .twitter-share:hover{
+    background-color: #00aced;
+}
+.ws--single-post-social-share .pinterest-share:hover{
+    background-color: #c8232c;
+}
+/* .ws--related-post-section */
+.ws--related-post-section{
+    background-color: #1c1b1b;
+}
+.ws--related-post-section .card {
+    background-color: transparent;
+
+}
+
+.ws--related-post-section .ws--posts-content .card-body h2 {
+    color: #ffffff;
+}
+/*=========================================
+Media Query of   single blog Page Are Here! 
+==========================================*/
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .ws--single-blog-article-box article {
+        width: 80%;
+    }
+    .toolbar-share-icon {
+        margin-right: 20px;
+    }
+    .toolbar-share-icon span {
+
+        margin-right: 0px;
+    }
+    .toolbar-share-icon a {
+        padding: 0 10px;
+    }
+    .toolbar-next-prev-btn a {
+  
+        margin-right: 0px;
+     
+    }
+    .toolbar-next-btn {
+        margin-left: 5px !important;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .ws--single-blog-article-box article {
+        width: 90%;
+    }
+    .ws--single-blog-toolbar {
+        display: none;
+    }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ws--single-blog-featured-img {
+        height: 50vh;
+    }
+
+    .ws--single-blog-article-box article {
+        width: 100%;
+        padding: 70px 35px;
+        margin-top: 0px;
+    }
+    .ws--single-post-footer {
+        display: block !important;
+    }
+    .ws--single-post-social-share {
+        display: flex;
+        margin-top: 40px;
+    }
+    .ws--single-post-social-share a {
+        width: 100%;
+    }
+    .ws--single-post-social-share span {
+        width: 100%;
+    }
+ 
+}
+
+
+
+
+
+/*=========================================
+Css of gift page Are Here End
+==========================================*/
+.ws--gift-card-page-section{
+    background-color: #efefef;
+}
+
+.ws--section-heading-wrapper p{
+    font-size: 14px;
+}
+
+.ws--gift-amount-btn button.btn {
+    background-color: #d2e4c4;
+    color: #559637;
+    width: 90%;
+}
+.ws--gift-amount-btn .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+.ws--gift-img img {
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+}
+.ws--gift-promo-code span {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.ws--gift-box {
+    position: relative;
+}
+
+.ws--gift-promo-code {
+    position: absolute;
+    bottom: 25px;
+    left: 112px;
+}
+/*=========================================
+Media Query of   gift Page Are Here! 
+==========================================*/
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ws--gift-promo-code {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin-top: 20px;
+    }
+    .ws--gift-card-wraper{
+        width: 100%;
+    }
+}
+
+
+
+
+/* 
+css of password are here
+=================================== */
+
+.ws--password-page-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #31373d;
+}
+.ws--password-page-content p {
+    margin-bottom: 30px;
+    color: #6c6c6c;
+}
+.ws--pasword-page-input .form-control{
+    padding: 0.600rem 0.75rem;
+    background-color: transparent;
+}
+.ws--pasword-page-input .form-control:focus {
+    border-color: #108043;
+    box-shadow: 0 0 0 0.1rem #108043;
+    border-color: 1px solid #108043;
+}
+.ws--pasword-page-input .btn-primary {
+
+    background-color: #008060;
+    border-color: #008060;
+}
+.ws--pasword-page-input  .btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 35px;
+
+}
+.ws--pasword-page-input .btn:hover {
+
+    background-color: #004c3f;
+    border-color: #004c3f;
+}
+.ws--pasword-page-input button:focus {
+    box-shadow: 0 0 0.1875em 0.1875em rgba(0,128,96,0.5) !important;
+
+}
+.ws--store-owner {
+    color: #212b36 !important;
+}
+.ws--store-owner a{
+    color: #479ccf !important;
+    text-decoration: underline;
+}
+/*=========================================
+Media Query of  password Page Are Here! 
+==========================================*/
+
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .ws--password-page {
+        padding: 0 !important;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .ws--password-page-logo.py-10 {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .ws--password-section-wraper {
+        width: 100%;
+    }
+    .ws--password-page-logo {
+
+        padding: 40px 0;
+    }
+  
+}
+
+
+ 
+  
+  
