@@ -1,0 +1,69 @@
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {  }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+ .ws--app-settings {
+    height: 250px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.ws--quick-analytics {
+
+    margin-top: 40px !important;
+}
+.ws--analytics-box{
+    width: 50%;
+}
+.ws--quick-analytics-email-collect{
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+}
+.ws--quick-analytics-sales-collect{
+    margin-left: 10px;
+}
+}
+ 
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1130px) { 
+
+
+
+}
+  
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    
+ 
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+ @media (max-width: 768px) {  
+
+header {
+    background-color: #f9fafa !important;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+.ws--navbar-item li {
+    text-align: center;
+}
+.ws--dashboard {
+    padding-top: 50px;
+}
+
+
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+
+    
+}

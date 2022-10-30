@@ -1,322 +1,395 @@
-/* 
- * Your Own Style Goes to here  
-*/
-
-
-/*=========================================
-Common Css Are Here Start
-==========================================*/
-/* section heading */
-.ws--section-heading h2{ 
-        font-size: 20px;
-        letter-spacing: 4px;
-        color: #1c1b1b;      
-        font-weight: 500;     
-}
-
-/*=========================================
-Common Css Are Here End
-==========================================*/
-
-
-
-
-/*=========================================
-Css Of  Log in Page Are Here! 
-==========================================*/
-.ws--loginFrom-section{
-    background-color: #efefef;
-  
-}
-.ws--loginForm-heading .ws--allForm-title{
-    font-size: 14px;
-    font-weight: 400;
-    color: #1c1b1b;
-
-}
-.ws--allForm-css input::placeholder {
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: #6a6a6a;
-}
-.ws--allForm-css  .form-control {
-    padding: 0.6rem 0.75rem;
-    background-color: transparent;
-    border-radius: 0;
-    border: 1px solid #cfcfcf;
-
-}
-.ws--allForm-css .form-control:focus {
-    background-color: transparent;
-    outline: 0;
-    box-shadow: none;
-    border-color: #1c1b1b;
-}
-.ws--login-form .input-pass{
-position: relative;
-}
-.ws--login-form .input-pass a {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 13px;
-    color: #6a6a6a;
-    letter-spacing: 1px;
-}
-.ws--login-form .input-pass a:hover {
-    color: #1c1b1b;
-}
-.ws--allForm-css .login-btn button{
-   width: 100%;
-}
-.ws--allForm-css .ws--create-account p{
-   font-size: 14px;
-   color: #6a6a6a;
-   letter-spacing: 1px;
-}
-.ws--allForm-css .ws--create-account a{
-   color: #1c1b1b;
-}
-
-/* ws--rePass-section */
-.ws--rePass-section{
-    background-color: #efefef;
-}
-
-
-/*=========================================
-Css Of  Register Page Are Here! 
-==========================================*/
-.ws--registerFrom-section{
-    background-color: #efefef;
-    height: 100vh;
-}
-
-
-
-/*=========================================
-Css Of  Contact Page Are Here! 
-==========================================*/
-.ws--contactFrom-section{
-    background-color: #efefef;
-    height: 100vh;
-}
-.form-nameField{
-    width: 49%;
-}
-
-
-/*=========================================
-Media Query of   Contact Page Are Here! 
-==========================================*/
-
-/* // X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}
-
-/* // Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    .nameField-wraper {
-       display: block !important;
-    }
-    .form-nameField {
-        width: 100%;
-    }
-}
-/* // X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
-
-
-
-
-
-
-
-/*=========================================
-Css Of  menu and cart Page Are Here! 
-==========================================*/
-header {
-background-color: #f7f9ff;
-border-bottom: 1px solid #e9e7e7;
-box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
-}
-header .logo h1{
-    font-size: 20px;
-    letter-spacing: 4px;
-    color: #1c1b1b;
-
-}
-.ws--header-content{
-    margin-bottom: 20px;
-}
-
-.ws--menuClose-btn {
-    padding: 1.2rem 2rem;
-}
-.ws--offCanvas-menu {
-    padding: 20px 10px;
-}
-.hamburger-menu .offcanvas{
-    background-color: #1c1b1b;
-    width: 350px;
-}
-
-/* collapsible plus btn */
-.ws--collapsible-plus-wrapper {
-    position: absolute;
-    top: 40%;
-    right: 15px;
-}
-.ws--collapsible-plus{
-    position: relative;
-}
-.ws--collapsible-plus::before {
-    content: "";
-    position: absolute;
-    height: 15px;
-    width: 2px;
-    top: -2px;
-    right: 10px;
-    background-color: #6a6a6a;
-    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-}
-.ws--collapsible-plus::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 15px;
-    top: 4px;
-    right: 4px;
-    background-color: #6a6a6a;
-    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-}
-.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
-    opacity: 0;
-}
-.ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::after, .ws--collapsible-button[aria-expanded=true] .ws--collapsible-plus::before {
-    transform: translate(-50%,-50%) rotate(360deg);
-}
-/* collapsible plus btn */
-
-.ws--offCanvas-menu ul{
-    list-style: none;
-    padding: 0;
-}
-.ws--offCanvas-menu ul .ws--parent-li {
-    border-bottom: 1px solid #6a6a6a;
-}
-.ws--offCanvas-menu ul .ws--parent-li a:hover {
-    color: #fff ;
-}
-.ws--offCanvas-menu ul li a {
-    color: #fff;
-    padding: 20px 10px;
-    display: block;
-    position: relative;
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-}
-.ws--second-child-menu {
-    border-left: 1px solid #6a6a6a;
-}
-
-.ws--second-child-menu li a {
-    padding: 7px 10px !important;
-}
-
-ul.ws--first-child-menu li a {
-    color: #ffffff80;
-    font-size: 12px;
-}
-
-/* ===========menu bar item  ========= */
-
-
-/* ===========menu cart item ========= */
-
-.ws--menuCart-content .offcanvas-header {
-    padding: 1.2rem 2rem;
-    border-bottom: 1px solid #eaeaea;
-}
-.ws--menuCart-content .btn-close:focus {
-    outline: 0;
-    box-shadow: none;
-
-}
-.ws--product-content {
-    padding: 1.5rem 1rem;
-}
-.cart-product-title h2{
-        font-size: 14px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: #1c1b1b;
-        margin: 8px 0;
-    
-}
-.cart-product-details p {
-    font-size: 11px;
-    letter-spacing: 2.8px;
-    color: #6a6a6a;
-    margin-bottom: 5px;
-}
-.ws--cart-details .ws--product-price{
-    margin-bottom: 12px;
-}
-.ws--cart-details .ws--product-price  p span {
-    color: #6a6a6a;
-    font-size: 14px;
-    font-weight: 400;
-}
-.cart-quantity .quantity  {
-    border: 1px solid #efefef;
-    margin-bottom: 20px;
-    width: 60%;
-}
-.cart-quantity .quantity .value-button {
-    width: 15px;
-    height: 12px;
-    color: #6a6a6a6a;
-
-}
-.cart-quantity .remove-btn a {
-    font-size: 13px;
-    letter-spacing: 2.5px;
-    font-weight: 400;
-    margin-right: -8px;
-    display: block;
-    text-decoration: underline;
-    color: #6a6a6a;
-}
-.ws--menuCart-footer {
-    border-top: 1px solid #efefef;
-    padding: 20px 30px 30px 30px;
-}
-.ws--menuCart-footer h3 {
-    font-size: 15px;
-    color: #1c1b1b;
-    letter-spacing: 2px;
-}
-.ws--menuCart-footer p {
-    font-size: 14px;
-    color: #6a6a6a;
-    letter-spacing: 1px;
-    margin: 15px 0;
-}
-.ws--menuCart-footer .cart-checkout-btn button{ 
+/* img{
     width: 100%;
+    max-width: 100%;
+} */
+:root {
+  --header-font-size: 22px;
+  --check-label-font-size: 20px;
+  --box-label-font-size: 16px;
+  --input-value-size: 15px;
+  --box-title-size: 30px;
+  --box-border1: 3px solid #e5e5e5;
+  --box-border2: 3px solid #6f69b7;
+
+  --coupon-title-font-size: 21px;
+  --icon-font-size: 18px;
+  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body {
+  background-color: #fff;
+  font-family: var(--font-family);
+}
+
+/* header css start from here */
+header {
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+.ws--navbar-item {
+}
+.ws--navbar-item li {
+  margin: 0 10px;
+}
+
+.ws--navbar-item li a {
+  font-size: var(--header-font-size);
+  font-weight: 600;
+  line-height: 48px;
+  color: #5e5e5f;
+      padding: 0;
 }
 
 
+.ws--navbar-item a:hover {
+  color: #5e5e5f ;
+}
+.ws--navbar-item li a i {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.nav-link:focus{
+  color:#5e5e5f;
+}
+.active {
+    color: #6F69B7 !important;
+    background: #ECEBFF;
+    border-radius: 5px;
+}
 
 
+/* header css end from here */
 
+/* Dashboard Right css start from here */
 
+.ws--dashboard{
+  padding:0 0 50px 0;
+}
+.ws--dashboard-right {
+}
+/* switcher css start from here */
+.ws--rocket-follower-switcher {
+  background-color: #f9fafa;
+  border-radius: 8px;
+  padding: 18px;
+  border: var(--box-border1);
+}
+/* .ws--rocket-follower-switcher .form-check-input:checked {
+  background-color: #e8ecf7;
+  border-color: #6f69b7;
+} */
+.form-check-input:checked {
+  background-color: #e8ecf7;
+  border-color: #6f69b7;
+}
+.form-check-input:focus {
+  border-color: #6f69b7;
+  box-shadow: none;
+}
 
+.ws--rocket-follower-switcher .form-switch .form-check-input {
+  width: 4em;
+  height: 2em;
+}
+.form-check-label {
+  font-weight: 500;
+  font-size: var(--check-label-font-size);
+}
+.form-check-label strong {
+  color: #131826;
+}
+.form-check-label strong a {
+  color: #6f69b7;
+  text-decoration: none;
+}
 
+/* dashbord box (Customize box)*/
+.ws--dashboard-box {
+  background-color: #f9fafa;
+  border: var(--box-border1);
+  border-radius: 8px;
+}
+
+.ws--dashboard-box > h3 {
+  color: #6f69b7;
+  font-size: var(--box-title-size);
+  font-weight: 500;
+  padding: 10px;
+}
+.ws--dashboard-box div > label {
+    background: #6f69b7;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: var(--box-label-font-size);
+    font-weight: 500;
+    padding: 8px;
+    width: 40%;
+    border-radius: 6px;
+    height: 35px;
+}
+.ws--dashboard-box div > input,
+select {
+  border: var(--box-border2);
+  border-radius: 8px;
+  width: 75%;
+}
+.ws--dashboard-box div > input:focus {
+   border-color: #6f69b7 !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.ws--dashboard-box div > select,
+input[type="text"] {
+  font-size: var(--input-value-size);
+  color: #131826;
+  font-weight: 500;
+}
+.ws--dashboard-box div > select:focus{
+   border-color: #6f69b7 !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.ws--dashboard-box .box2{
+
+}
+
+.color-picker-choose {
+    height: 20px;
+    width: 20px;
+    background: #6f69b7;
+    position: absolute;
+    right: 2%;
+    top: 20%;
+}
+.label-bg-none {
+    background-color: transparent !important;
+    color: rgb(19, 24, 38) !important;
+    line-height: 15px;
+}
+.undertitle-check{
+  height: 46px !important;
+  border: 3px solid #6F69B7 ;
+  border-radius: 8px;
+}
+.undertitle-check .form-check-input {
+    width: 55px;
+    height: 20px;
+    border: 1px solid #ddd;
+}
+.ws--dashboard-box textarea {
+    resize: none;
+    border: 3px solid #6F69B7;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 18px;
+    font-size: var(--box-label-font-size);
+    font-weight: 500;
+}
+.ws--dashboard-box textarea:focus{
+  /* box-shadow: none;
+  outline: 0; */
+ border-color: #6f69b7;
+  box-shadow: none;
+
+}
+.border-bottom {
+  border-bottom: 1px solid black;
+}
+
+/* Css for Coupon Subscribe section start  ================*/
+
+.ws--shoppage-section {
+  width: 580px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.ws--coupon-subscribe {
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+
+.ws--preview-btn {
+    margin-bottom: 20px;
+}
+.ws--preview-btn a {
+  color: #6f69b7;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  text-decoration: none;
+}
+.ws--preview-btn a i {
+  color: #6f69b7;
+  font-size: 22px;
+  margin-right: 0;
+}
+.ws--form-control:focus {
+  background-color: #fff;
+  border-color: currentColor;
+  outline: 0;
+  box-shadow: none;
+}
+
+.ws--coupon-subscribe-text {
+  background-color: #F5F5F5;
+  padding: 20px 10px;
+  border-radius: 9px;
+}
+.ws--coupon-subscribe h4 {
+  font-weight: 400;
+  font-size: var(--coupon-title-font-size);
+  background: #ffffff;
+  border: 3px solid #cbcbcb;
+  border-radius: 18px;
+  color: #6f69b7;
+  padding: 10px 0px;
+}
+.ws--coupon-subscribe h4 i {
+  margin-left: 10px;
+}
+
+.ws--coupon-subscribe i {
+  font-size: var(--icon-font-size);
+  color: #6f69b7;
+}
+.ws--form-subscribe-wrap{
+    background-color: #F5F5F5;
+  padding: 20px 10px;
+  border-radius: 9px;
+}
+.ws--coupon-subscribe-form {
+    background-color: #ffffff;
+    border: 3px solid #cbcbcb;
+    border-radius: 18px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 4px;
+}
+.ws--coupon-subscribe-form h4 {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.ws--coupon-subscribe-form h6 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #6f69b7;
+  margin-left: 50px;
+  /* border-bottom: 3px solid #CBCBCB; */
+}
+.ws--subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid rgb(203, 203, 203);
+    margin-top: 15px;
+    padding: 20px 25px 0px;
+}
+.ws--subscribe-form input {
+  margin: 0 8px;
+}
+
+.ws--subscribe-form .ws--form-control {
+  background-color: #fff;
+  border: 3px solid #6f69b7;
+  border-radius: 27px;
+  padding: 6px;
+  width: 100%;
+}
+.ws--coupon-subscribe-form p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #6f69b7;
+  padding: 10px 20px;
+}
+
+.ws--coupon-subscribe-form h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: rgb(111, 105, 183);
+    padding: 15px 20px 0px;
+    border-top: 2px solid rgb(203, 203, 203);
+    margin-top: 10px;
+}
+
+/* Dashboard Left css start from here */
+
+/* dashboard app settings */
+.ws--dashboard-left {
+}
+.ws--app-settings {
+    height: 830px;
+    background: rgb(249, 250, 250);
+    border: 3px solid rgb(229, 229, 229);
+    border-radius: 9px;
+}
+.ws--app-settings p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+    padding: 25px 8px;
+}
+.ws--app-settings p a {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #6f69b7;
+}
+
+/* analytics css start from here*/
+.ws--quick-analytics {
+  background: #f9fafa;
+  border: 3px solid #e5e5e5;
+  border-radius: 9px;
+  padding: 30px 20px;
+}
+.ws--quick-analytics h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 50px;
+  color: #6f69b7;
+  margin: 0 0 15px 0;
+}
+.ws--analytics-box {
+  background: #f9fafa;
+  border: 3px solid #e5e5e5;
+  border-radius: 9px;
+  padding: 20px 0;
+}
+.ws--analytics-box strong {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131826;
+}
+.ws--analytics-box h3 {
+  color: #121826;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+
+.ws--more-analytics-btn {
+}
+.ws--more-analytics-btn a {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    text-decoration-line: underline;
+    color: #6f69b7;
+}
+.ws--more-analytics-btn a i {
+}
