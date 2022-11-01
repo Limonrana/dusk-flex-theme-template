@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+  </head>
+  <body>
+
+    <!-- header start =====================-->
+    <header>
+      <nav class="navbar navbar-expand-md pt-0 ws--menu-bar">
+          <div class="container justify-content-end">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""><i class="fa-solid fa-bars-staggered"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav m-auto
+              ws--navbar-item">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="analytics.html"><i class="fa-solid fa-chart-line"></i>Analytics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="email.html"><i class="fa-regular fa-envelope"></i>Email</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+  <!-- header end =======================-->
+
+
+
+    <!-- Dashboard start from here  =======-->
+    <section class="ws---filter">
+      <div class="container">
+        <div class="d-block d-lg-flex justify-content-between align-items-center m-auto">
+          <div class="d-flex justify-content-center  align-items-center mb-4">
+            <div class="ws--email-filter-search-form">
+              <form action="#" class="d-flex justify-content-between">
+                <input type="email" class="form-control" name="" placeholder="Search by Email" id="">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+            <div class="ws--email-filter-icon ws--custom-range-filter ms-3">
+              <a href="#"><i class="fa-solid fa-filter"></i> Filter</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center ws--custom-range-filter">
+            <div>
+              <a href="#"><i class="fa-solid fa-download"></i> Export</a>
+            </div>
+            <div>
+              <form action="#">
+                <select name="" id="">
+                  <option value="day7" selected>Last 7 Days</option>
+                  <option value="day30">Last 30 Days</option>
+                  <option value="day60">Last 60 Days</option>
+                </select>
+              </form>
+            </div>
+            <div>
+              <a href="#"><i class="fa-solid fa-calendar-days"></i> Custom range</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="ws--email-table py-5">
+      <div class="container">
+       <div class="table-responsive">
+        <table class="table table-responsive">
+          <tbody>
+
+
+            <tr>
+              <td class="send-column">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <i class="fa-solid fa-paper-plane  "></i>
+                  </div>
+                  <div>
+                    <h6>Sent</h6>
+                    <p class="m-0">contact@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+
+              <td class="support-column">
+                <i class="fa-regular fa-face-smile "></i> <strong>Support@gmail.com</strong>
+              </td>
+
+              <td class="time-column">
+                <i class="fa-regular fa-clock "></i>
+                <span> 38 minutes ago</span>
+              </td>
+
+              <td class="step-column"><span>Step 1</span></td>
+            </tr>
+            <tr>
+              <td class="send-column">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <i class="fa-solid fa-paper-plane  "></i>
+                  </div>
+                  <div>
+                    <h6>Sent</h6>
+                    <p class="m-0">contact@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+
+              <td class="support-column">
+                <i class="fa-regular fa-face-smile "></i> <strong>Support@gmail.com</strong>
+              </td>
+
+              <td class="time-column">
+                <i class="fa-regular fa-clock "></i>
+                <span> 38 minutes ago</span>
+              </td>
+
+              <td class="step-column"><span>Step 1</span></td>
+            </tr>
+            <tr>
+              <td class="send-column">
+                <div class="d-flex align-items-center">
+                  <div class="me-3">
+                    <i class="fa-solid fa-paper-plane  "></i>
+                  </div>
+                  <div>
+                    <h6>Sent</h6>
+                    <p class="m-0">contact@gmail.com</p>
+                  </div>
+                </div>
+              </td>
+
+              <td class="support-column">
+                <i class="fa-regular fa-face-smile "></i> <strong>Support@gmail.com</strong>
+              </td>
+
+              <td class="time-column">
+                <i class="fa-regular fa-clock "></i>
+                <span> 38 minutes ago</span>
+              </td>
+
+              <td class="step-column"><span>Step 1</span></td>
+            </tr>
+           
+
+          </tbody>
+        </table>
+       </div>
+      </div>
+    </section>
+    <!-- Dashboard End from here  =========-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

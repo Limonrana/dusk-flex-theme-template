@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+  </head>
+
+
+    <!-- header start ==================================-->
+    <header>
+        <nav class="navbar navbar-expand-md pt-0 ws--menu-bar">
+            <div class="container justify-content-end">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""><i class="fa-solid fa-bars-staggered"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav m-auto
+                ws--navbar-item">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="dashboard.html"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="analytics.html"><i class="fa-solid fa-chart-line"></i>Analytics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="email.html"><i class="fa-regular fa-envelope"></i>Email</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="settings.html"><i class="fa-solid fa-gear"></i>Settings</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- header end ====================================-->
+
+
+
+    <!-- Dashboard start from here  ===================-->
+    <section class="ws--dashboard">
+        <div class="container">
+            <div class="row">
+
+                <!-- Dashboard Left -->
+                <div class="col-xl-3 order-1 order-xl-0">
+                    <div class="ws--dashboard-left">
+                        <div class="ws--app-settings ">
+                            <p>In order to make the <strong>Application</strong> work, You must enable The App on your <strong>Theme Setting <i class="fa-solid fa-arrow-right"></i> App Embeds</strong></p>
+                            <p><a href="#">Click Here</a> to activate the app</p>
+                        </div>
+
+
+                        <div class="ws--quick-analytics ws--totall-analytics text-center  mt-3 ">
+                            <h4>Quick Analytics</h4>
+
+                            <div class="d-flex d-xl-block justify-content-between">
+                            <div class="ws--quick-analytics-email-collect   ws--analytics-box
+                            mb-4">
+                                <strong>Emails Collected</strong>
+                                <h4>13035</h4>
+                            </div>
+                            <div class="ws--quick-analytics-sales-collect ws--analytics-box">
+                                <strong>Total Sales</strong>
+                                <h4>404320</h4>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="ws--more-analytics-btn text-end">
+                            <a href="#">More Analytics <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dashboard Right -->
+                <div class="col-xl-9">
+                    <div class="ws--dashboard-right">
+                        <div class="ws--rocket-follower-switcher  ">
+                            <div class="form-check form-switch d-flex justify-content-between p-0">
+                                <label class="form-check-label" for="top-check-switch"><strong>Rocket Follower is <a href="#">published on your product pages</a></strong></label>
+                                <input class="form-check-input" type="checkbox" id="top-check-switch" checked>
+                                
+                              </div>
+                         </div>
+
+
+                        <div class="row align-items-center">
+
+                            <!-- customize -->
+                            <div class="col-lg-6">
+                                <div class="ws--dashboard-box  box1  p-3 mt-3">
+                                    <h3 class="text-center">Customize your box title</h3>
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="widget-color">Widget Color</label>
+                                        <input class="text-center  ms-2" type="text" id="widget-color" value="#6525af">
+                                        <div class="color-picker-choose"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="text-color">Text Color</label>
+                                        <input class="text-center  ms-2" type="text" id="text-color" value="#6525af">
+                                        <div class="color-picker-choose"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="discount">Discount</label>
+                                        <input class="text-center  ms-2" type="text" id="discount" value="10% OFF">
+                                    </div>
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="email-icon">Email</label>
+                                        <select name="" class="ms-2 text-center" id="email-icon">
+                                            <option value="mail1" selected><i class="fa-solid fa-envelope"></i>fff</option>
+                                            <option value="mail2"><i class="fa-regular fa-envelope"></i>ff</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="box-title">Box Title</label>
+                                        <input class="text-center  ms-2" type="text" id="box-title" value="Enter your Email to Get 10% OFF">
+                                    </div>
+                                    
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="box-size">Box Size</label>
+                                        <select name="" class=" ms-2 text-center" id="box-size">
+                                            <option value="size1" selected>45px</option>
+                                            <option value="size2">40px</option>
+                                            <option value="size3">50px</option>
+                                            <option value="size4">52px</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- preview -->
+                            <div class="col-lg-6">
+                              <div class="ws--coupon-subscribe">
+                                 <div class="ws--preview-btn">
+                                    <a href="#"><i class="fa-solid fa-eye"></i> Preview</a>
+                                </div>
+
+                                 <div class="ws--coupon-subscribe-text">
+                                     <h4>
+                                         <span><i class="fa-solid fa-envelope"></i></span> Enter your
+                                        Email to <strong>Get 10% OFF</strong
+                                       ><span><i class="fa-solid fa-circle-chevron-down"></i></span>
+                                      </h4>
+                                   </div>
+                              </div>
+                            </div>
+
+
+
+                            <!-- customize -->
+                            <div class="col-lg-6">
+                                <div class="ws--dashboard-box box2  p-3 ">
+                                    <h3 class="text-center">Customize your box title</h3>
+
+
+                                    <div class="d-flex form-check form-switch justify-content-between position-relative mb-2 p-0">
+                                        <label class="form-check-label " for="undertitle-text-switch">Undertitle text</label>
+                                        <div class="d-flex justify-content-between align-items-center w-75  ms-2 undertitle-check">
+                                            <label class="label-bg-none w-100" for="undertitle-text-switch">The discount will be applied automatically</label>
+                                            <input class="form-check-input  ms-2" type="checkbox" id="undertitle-text-switch" checked>
+                                        </div>
+                                   </div>
+
+
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="rgpd-text">RGPD Text</label>
+                                        <textarea class="text-center form-control w-75 ms-2" rows="3" id="rgpd-text" name=""  >You don’t need to do anything else after that. By entering your email, you’ll accept marketing messages, you can always unsubscribe when you want.</textarea>
+                                    </div>
+
+                                    
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="undertitle-size">Undertitle Size</label>
+                                        <select name="" class=" ms-2 text-center" id="undertitle-size">
+                                            <option value="size1" selected>20px</option>
+                                            <option value="size2">22px</option>
+                                            <option value="size3">25px</option>
+                                            <option value="size4">30px</option>
+                                        </select>
+                                    </div>
+
+                                    
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="rgpd-size">RGPD Size</label>
+                                        <select name="" class=" ms-2 text-center" id="rgpd-size">
+                                            <option value="size1" selected>20px</option>
+                                            <option value="size2">22px</option>
+                                            <option value="size3">25px</option>
+                                            <option value="size4">30px</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <!-- preview -->
+                            <div class="col-lg-6">
+                                <div class="ws--coupon-subscribe mb-5">
+                                    <div class="ws--preview-btn">
+                                    <a href="#"><i class="fa-solid fa-eye"></i> Preview</a>
+                                    </div>
+
+                                <div class="ws--form-subscribe-wrap">
+                                <div class="ws--coupon-subscribe-form">
+                                <h4>
+                                    <span><i class="fa-solid fa-envelope"></i></span> Enter your
+                                    Email to <strong>Get 10% OFF</strong
+                                    ><span><i class="fa-solid fa-circle-chevron-down"></i></span>
+                                </h4>
+                                <h6>The discount will be applied automatically</h6>
+
+                                <div class="ws--subscribe-form">
+                                    <label for="coupon-mail"
+                                    ><i class="fa-solid fa-envelope"></i
+                                    ></label>
+                                    <input id="coupon-mail" class="ws--form-control" type="email" />
+                                    <span><i class="fa-solid fa-circle-chevron-up"></i></span>
+                                </div>
+
+                                <p>
+                                    You don’t need to do anything else after that. <br />
+                                    By entering your email, you’ll accept marketing messages, you
+                                    can always unsubscribe when you want.
+                                </p>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!-- customize -->
+                            <div class="col-lg-6">
+                                <div class="ws--dashboard-box box3 p-3 ">
+                                    <h3 class="text-center">Customize your box title</h3>
+
+
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="congrats-text">Congrats Text</label>
+                                        
+                                        <textarea class="text-center form-control w-75  ms-2" id="congrats-text" name=""  rows="3">10% Discount automatically applied! Congratulations🎉</textarea>
+                                    </div>
+
+                                    
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="congrats-color">Congrats Color</label>
+                                        <input class="text-center w-75 ms-2" type="text" id="congrats-color" value="#6525af">
+                                        <div class="color-picker-choose"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between position-relative mb-2">
+                                        <label class="" for="congrats-size">Congrats Size</label>
+                                        <select name="" class=" ms-2 text-center" id="congrats-size">
+                                            <option value="size1" selected>20px</option>
+                                            <option value="size2">22px</option>
+                                            <option value="size3">25px</option>
+                                            <option value="size4">30px</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                             <!-- preview -->
+                            <div class="col-lg-6">
+                                <div class="ws--coupon-subscribe">
+                                    <div class="ws--preview-btn">
+                                    <a href="#"><i class="fa-solid fa-eye"></i> Preview</a>
+                                    </div>
+
+                                    <div class="ws--form-subscribe-wrap">
+                                    <div class="ws--coupon-subscribe-form">
+                                    <h4>
+                                        <span><i class="fa-solid fa-envelope"></i></span> Enter your
+                                        Email to <strong>Get 10% OFF</strong
+                                        ><span><i class="fa-solid fa-circle-chevron-down"></i></span>
+                                    </h4>
+                                    <h6>The discount will be applied automatically</h6>
+                                    <h5>10% Discount automatically applied! Congratulations 🎉</h5>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Dashboard End from here  =====================-->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
