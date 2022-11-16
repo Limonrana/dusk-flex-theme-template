@@ -30,14 +30,10 @@
         margin-left: 10px;
         
     } 
-    /* .ws--home-analytics .ws--quick-analytics-email-collect {
-        
+    
+    .ws--home-analytics .ws--analytics-box {
         width: 50%;
     }
-    .ws--home-analytics .ws--quick-analytics-sales-collect{
-        
-        width: 50%;
-    } */
     .ws--analytics-box strong {
      
         font-size: 15px;
@@ -129,6 +125,7 @@
     .ws---filter {
         margin-top: 30px;
     }
+   
 
  }
 
