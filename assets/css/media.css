@@ -3,67 +3,136 @@
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
- .ws--app-settings {
-    height: 250px;
-    margin-top: 40px;
-    text-align: center;
-}
 
-.ws--quick-analytics {
+ /* app settings */
+    .ws--app-settings {
+    
+        margin-top: 40px;
+        text-align: center;
+    }
 
-    margin-top: 40px !important;
-}
-.ws--analytics-box{
-    width: 50%;
-}
-.ws--quick-analytics-email-collect{
-    margin-right: 10px;
-    margin-bottom: 0 !important;
-}
-.ws--quick-analytics-sales-collect{
-    margin-left: 10px;
-}
+
+/* analytics */
+    .ws--quick-analytics {
+        margin-top: 40px !important;
+    }
+
+
+    .ws--quick-analytics-email-collect{
+        
+        margin-bottom: 0 !important;
+    }
+    .ws--quick-analytics-email-collect {
+        margin-bottom: 0 !important;
+       
+    }
+    .ws--quick-analytics-sales-collect{
+        margin-left: 10px;
+        
+    } 
+    /* .ws--home-analytics .ws--quick-analytics-email-collect {
+        
+        width: 50%;
+    }
+    .ws--home-analytics .ws--quick-analytics-sales-collect{
+        
+        width: 50%;
+    } */
+    .ws--analytics-box strong {
+     
+        font-size: 15px;
+      
+    }
+    .ws--quick-process-btn {
+        text-align: left;
+        margin-top: 15px;
+    }
 }
  
 
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (max-width: 1130px) { 
+@media (max-width: 1130px) {
 
-
-
-}
+ }
   
+
 
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
     
- 
+    /* coupon subscribe */
+    .ws--coupon-subscribe {
+        margin: 30px 0;
+    }
 
+    .ws--analytics-box {
+        width: 100%;
+        margin-bottom: 25px !important;
+    }
+    .ws--analytics-box strong {
+        font-size: 18px;
+    
+      }
+      .ws--email-filter-search-form {
+        margin-bottom: 25px;
+    }
 }
 
  /* Medium devices (tablets, 768px and up) */
  @media (max-width: 768px) {  
 
-header {
-    background-color: #f9fafa !important;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-bottom: 1px solid #eaeaea;
-}
-.ws--navbar-item li {
-    text-align: center;
-}
-.ws--dashboard {
-    padding-top: 50px;
-}
+    /* header */
+    header {
+        background-color: #f9fafa !important;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid #eaeaea;
+    }
+    .ws--menu-bar button {
+        border: 3px solid #6f69b7;
+        border-radius: 9px;
+    }
+    .navbar-toggler:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 3px solid #6f69b7;
+    }
+    .ws--navbar-item  {
+        margin-top: 10px !important;
+    }
+    
+    .ws--navbar-item li {
+        text-align: center;
+        margin-top: 7px;
+    }
+    .ws--dashboard {
+        padding-top: 50px;
+    }
 
+
+
+
+/* ws settings page==================== */
+    .ws--settings-section {
+        padding:60px  0!important;
+    }
+    .ws--settings-switcher label {
+        font-size: 18px;
+    }
+    .ws--page-title h3 {
+        font-size: 25px;
+        margin: 15px 0 40px 0;
+    }
+
+
+    .ws---filter {
+        margin-top: 30px;
+    }
 
  }
 
+
+
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
-
-
-    
-}
+@media (max-width: 576px) { }

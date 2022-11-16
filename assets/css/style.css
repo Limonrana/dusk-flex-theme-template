@@ -1,44 +1,75 @@
-/* img{
-    width: 100%;
-    max-width: 100%;
-} */
-:root {
-  --header-font-size: 22px;
-  --check-label-font-size: 20px;
-  --box-label-font-size: 16px;
-  --input-value-size: 15px;
-  --box-title-size: 30px;
-  --box-border1: 3px solid #e5e5e5;
-  --box-border2: 3px solid #6f69b7;
 
-  --coupon-title-font-size: 21px;
+:root {
+  --header-font-size: 18px;
+  --header-icon-font-size:18px;
+  --check-label-font-size: 18px;
+  --box-label-font-size: 14px;
+  --input-value-size: 14px;
+  --box-title-size: 25px;
+
+  --preview-btn-font-size:25px;
+  --preview-btn-icon-size:22px;
+  --coupon-title-font-size: 19px;
+  --congrats-font-size:18px;
+  --guide-p-size:18px;
+
+  --analytics-h3-size:24px;
+  --analytics-h4-size:30px;
   --icon-font-size: 18px;
-  --font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --font-family: system-ui,
+-apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+  Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+
 body {
-  background-color: #fff;
+  background-color: #F5F9FF;
   font-family: var(--font-family);
 }
+
+
+a{
+  text-decoration: none;
+}
+
+/* css for disable focus property */
+
+input:focus{
+  box-shadow: none;
+  outline: 0;
+  border-color:#6f69b7 !important;
+}
+textarea:focus{
+  box-shadow: none !important;
+  outline: 0;
+  border-color: #6f69b7 !important;
+}
+
+
+
+
 
 /* header css start from here */
 header {
     padding-bottom: 30px;
     padding-top: 10px;
 }
-.ws--navbar-item {
-}
+
+
 .ws--navbar-item li {
   margin: 0 10px;
+  border-radius: 9px;
+  border: 2px solid;
+  border-color: transparent;
 }
 
 .ws--navbar-item li a {
   font-size: var(--header-font-size);
   font-weight: 600;
-  line-height: 48px;
-  color: #5e5e5f;
-      padding: 0;
+  color: #040404;
+  padding: 5px 18px !important;
 }
 
 
@@ -47,44 +78,41 @@ header {
 }
 .ws--navbar-item li a i {
   margin-right: 5px;
-  font-size: 18px;
+  font-size:var(--header-icon-font-size);
 }
 .nav-link:focus{
   color:#5e5e5f;
 }
-.active {
-    color: #6F69B7 !important;
-    background: #ECEBFF;
-    border-radius: 5px;
+.ws--navbar-item li .active {
+  color: #A936E2!important;
+  background: #fff;
+  border-radius: 9px;
+  border: 2px solid #A2A5A9;
 }
-
-
 /* header css end from here */
+
+
+
 
 /* Dashboard Right css start from here */
 
 .ws--dashboard{
   padding:0 0 50px 0;
 }
-.ws--dashboard-right {
-}
+
 /* switcher css start from here */
 .ws--rocket-follower-switcher {
-  background-color: #f9fafa;
+  background-color: #fff;
   border-radius: 8px;
   padding: 18px;
-  border: var(--box-border1);
+  border: 3px solid #e5e5e5;
 }
-/* .ws--rocket-follower-switcher .form-check-input:checked {
-  background-color: #e8ecf7;
-  border-color: #6f69b7;
-} */
 .form-check-input:checked {
   background-color: #e8ecf7;
-  border-color: #6f69b7;
+  border-color: #A936E2;
 }
 .form-check-input:focus {
-  border-color: #6f69b7;
+  border-color: #A936E2;
   box-shadow: none;
 }
 
@@ -95,30 +123,30 @@ header {
 .form-check-label {
   font-weight: 500;
   font-size: var(--check-label-font-size);
+  width: 85%;
 }
 .form-check-label strong {
   color: #131826;
 }
 .form-check-label strong a {
-  color: #6f69b7;
+  color: #A936E2;
   text-decoration: none;
 }
-
 /* dashbord box (Customize box)*/
 .ws--dashboard-box {
   background-color: #f9fafa;
-  border: var(--box-border1);
+  border: 3px solid #e5e5e5;
   border-radius: 8px;
+  margin-bottom: 20px;
 }
-
 .ws--dashboard-box > h3 {
-  color: #6f69b7;
+  color: #A936E2;
   font-size: var(--box-title-size);
   font-weight: 500;
   padding: 10px;
 }
 .ws--dashboard-box div > label {
-    background: #6f69b7;
+    background: #A936E2;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -130,38 +158,29 @@ header {
     border-radius: 6px;
     height: 35px;
 }
-.ws--dashboard-box div > input,
-select {
-  border: var(--box-border2);
+.ws--dashboard-box div > input, select {
+  border-color: #6F69B7;
   border-radius: 8px;
   width: 75%;
 }
-.ws--dashboard-box div > input:focus {
-   border-color: #6f69b7 !important;
-  box-shadow: none !important;
-  outline: 0;
-}
 
-.ws--dashboard-box div > select,
-input[type="text"] {
+
+.ws--dashboard-box div > select, input[type="text"] {
   font-size: var(--input-value-size);
   color: #131826;
   font-weight: 500;
+  border: 2px solid #6F69B7;
 }
 .ws--dashboard-box div > select:focus{
-   border-color: #6f69b7 !important;
+  border-color: #6F69B7 !important;
   box-shadow: none !important;
   outline: 0;
-}
-
-.ws--dashboard-box .box2{
-
 }
 
 .color-picker-choose {
     height: 20px;
     width: 20px;
-    background: #6f69b7;
+    background: #A936E2;
     position: absolute;
     right: 2%;
     top: 20%;
@@ -171,9 +190,9 @@ input[type="text"] {
     color: rgb(19, 24, 38) !important;
     line-height: 15px;
 }
-.undertitle-check{
+.undertitle-check {
   height: 46px !important;
-  border: 3px solid #6F69B7 ;
+  border: 2px solid #6F69B7;
   border-radius: 8px;
 }
 .undertitle-check .form-check-input {
@@ -182,24 +201,16 @@ input[type="text"] {
     border: 1px solid #ddd;
 }
 .ws--dashboard-box textarea {
-    resize: none;
-    border: 3px solid #6F69B7;
-    border-radius: 8px;
-    overflow: hidden;
-    line-height: 18px;
-    font-size: var(--box-label-font-size);
-    font-weight: 500;
+  resize: none;
+  border: 2px solid #6F69B7;
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 18px;
+  font-size: var(--box-label-font-size);
+  font-weight: 500;
 }
-.ws--dashboard-box textarea:focus{
-  /* box-shadow: none;
-  outline: 0; */
- border-color: #6f69b7;
-  box-shadow: none;
 
-}
-.border-bottom {
-  border-bottom: 1px solid black;
-}
+
 
 /* Css for Coupon Subscribe section start  ================*/
 
@@ -211,33 +222,25 @@ input[type="text"] {
 
 .ws--coupon-subscribe {
   text-align: center;
-  /* margin-bottom: 50px; */
 }
 
 .ws--preview-btn {
     margin-bottom: 20px;
 }
 .ws--preview-btn a {
-  color: #6f69b7;
-  font-style: normal;
+  color: #A936E2;
   font-weight: 500;
-  font-size: 28px;
+  font-size: var(--preview-btn-font-size);
   text-decoration: none;
 }
 .ws--preview-btn a i {
-  color: #6f69b7;
-  font-size: 22px;
+  color: #A936E2;
+  font-size: var(--preview-btn-icon-size);
   margin-right: 0;
 }
-.ws--form-control:focus {
-  background-color: #fff;
-  border-color: currentColor;
-  outline: 0;
-  box-shadow: none;
-}
+
 
 .ws--coupon-subscribe-text {
-  background-color: #F5F5F5;
   padding: 20px 10px;
   border-radius: 9px;
 }
@@ -247,7 +250,7 @@ input[type="text"] {
   background: #ffffff;
   border: 3px solid #cbcbcb;
   border-radius: 18px;
-  color: #6f69b7;
+  color: #A936E2;
   padding: 10px 0px;
 }
 .ws--coupon-subscribe h4 i {
@@ -256,10 +259,10 @@ input[type="text"] {
 
 .ws--coupon-subscribe i {
   font-size: var(--icon-font-size);
-  color: #6f69b7;
+  color: #A936E2;
 }
 .ws--form-subscribe-wrap{
-    background-color: #F5F5F5;
+  background-color: #F5F5F5;
   padding: 20px 10px;
   border-radius: 9px;
 }
@@ -279,11 +282,10 @@ input[type="text"] {
 .ws--coupon-subscribe-form h6 {
   text-align: left;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
-  color: #6f69b7;
+  color: #A936E2;
   margin-left: 50px;
-  /* border-bottom: 3px solid #CBCBCB; */
 }
 .ws--subscribe-form {
     display: flex;
@@ -299,7 +301,7 @@ input[type="text"] {
 
 .ws--subscribe-form .ws--form-control {
   background-color: #fff;
-  border: 3px solid #6f69b7;
+  border: 3px solid #A936E2;
   border-radius: 27px;
   padding: 6px;
   width: 100%;
@@ -309,57 +311,109 @@ input[type="text"] {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  color: #6f69b7;
+  color: #A936E2;
   padding: 10px 20px;
 }
 
 .ws--coupon-subscribe-form h5 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: rgb(111, 105, 183);
-    padding: 15px 20px 0px;
-    border-top: 2px solid rgb(203, 203, 203);
-    margin-top: 10px;
+  font-weight: 700;
+  font-size: var(--congrats-font-size);
+  line-height: 27px;
+  text-align: center;
+  color: #A936E2;
+  padding: 15px 20px 0px;
+  border-top: 2px solid rgb(203, 203, 203);
+  margin-top: 10px;
 }
-
+.preview-p{
+  color: #000;
+  font-size: 15px;
+}
 /* Dashboard Left css start from here */
+
+
 
 /* dashboard app settings */
 .ws--dashboard-left {
+
 }
-.ws--app-settings {
-    height: 830px;
+.ws--quick-guide{
+  background-color: #fff;
+}
+.ws--quick-guide-title, .ws--quick-guide-customize, .ws--quick-guide-process{
+  border-bottom: 3px solid rgb(229, 229, 229);
+}
+
+.ws--quick-guide-customize {
+  padding: 15px;
+}
+
+.ws--quick-guide-customize-content h2{
+  color: #131826;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ws--customize-icon i {
+  color: #fff;
+  background-color: #2ecc71;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ws--quick-guide-process {
+  padding: 30px 15px;
+}
+
+.ws--quick-guide-process-content h2{
+  color: #131826;
+  font-size: 18px;
+  font-weight: 700;
+}
+.ws--quick-process-btn{}
+.ws--quick-process-btn a {
+  background-color: #A936E2;
+  color: #fff;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.ws--quick-guide-check i {
+  color: #fff;
+  background-color: #2ecc71;
+  padding: 5px;
+  border-radius: 50%;
+}
+.ws--quick-guide {
+  
     background: rgb(249, 250, 250);
     border: 3px solid rgb(229, 229, 229);
     border-radius: 9px;
+    /* padding: 15px 15px; */
 }
-.ws--app-settings p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 32px;
-    color: #000000;
-    padding: 25px 8px;
+
+.ws--quick-guide p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--guide-p-size);
+  color: #131826;
+  padding: 10px 15px 8px 15px;
+  margin: 0;
 }
-.ws--app-settings p a {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #6f69b7;
-}
+
 
 /* analytics css start from here*/
 .ws--quick-analytics {
-  background: #f9fafa;
+  background: #ffff;
   border: 3px solid #e5e5e5;
   border-radius: 9px;
   padding: 30px 20px;
+  color: #A936E2;
 }
 .ws--quick-analytics h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: var(--analytics-h3-size);
   line-height: 50px;
   color: #6f69b7;
   margin: 0 0 15px 0;
@@ -369,27 +423,222 @@ input[type="text"] {
   border: 3px solid #e5e5e5;
   border-radius: 9px;
   padding: 20px 0;
+  min-height: 140px;
 }
 .ws--analytics-box strong {
-    font-weight: 600;
-    font-size: 20px;
-    color: #131826;
+  font-weight: 600;
+  font-size: 18px;
+  color: #131826;
 }
-.ws--analytics-box h3 {
+.ws--analytics-box h4 {
   color: #121826;
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--analytics-h4-size);
   margin: 0;
 }
 
-.ws--more-analytics-btn {
-}
 .ws--more-analytics-btn a {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 48px;
-    text-decoration-line: underline;
-    color: #6f69b7;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 48px;
+  text-decoration-line: underline;
+  color: #A936E2;
 }
-.ws--more-analytics-btn a i {
+
+
+
+
+
+
+
+
+/* ws--custom-range-filter */
+.ws---filter {
+  margin-bottom: 30px;
 }
+
+.ws--email-filter-search-form form {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 65px;
+  border: 1px solid #000;
+}
+.ws--email-filter-search-form form input:focus{
+  box-shadow: none;
+  outline: 0;
+  border: transparent;
+}
+.ws--email-filter-search-form form input {
+  padding: 10px 20px;
+  border: transparent;
+  border-radius: 0 65px 65px 0;
+}
+.ws--email-filter-search-form form input::placeholder {
+  font-size: 20px;
+  color: #9f9f9f;
+
+}
+.ws--email-filter-search-form form  button {
+  background: #fff;
+  border: none;
+  padding: 0 10px;
+  border-radius: 65px 0 0 65px;
+}
+.ws--email-filter-search-form form  button i {
+  color: #000;
+}
+
+.ws--custom-range-filter form select {
+  background: #EEEFEF;
+  border-radius: 5px;
+  border: transparent;
+  width: 135px;
+  padding: 5px 10px;
+  margin: 0 15px;
+  font-weight: 500;
+}
+.ws--custom-range-filter form select:focus{
+  box-shadow: none;
+  outline: 0;
+  border: transparent;
+}
+.ws--custom-range-filter form option{
+font-size: 18px;
+line-height: 29px;
+color: #202223;
+}
+.ws--custom-range-filter a{
+text-decoration: none;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+color: #202223;
+
+}
+
+
+
+/* css for analytic.html page are here */
+
+
+
+
+
+
+
+
+/* css for email.html page are here */
+.ws--email-table  .table>thead {
+  background-color: #A936E2;
+  color: #fff;
+  font-size: 15px;
+  
+}
+.table-heading i{
+  margin-left: 10px;
+}
+/* .table>thead:not(:last-child)>:last-child>* {
+  border-bottom-color: currentColor;
+  padding: 10px 100px;
+} */
+.ws--email-table  .table>thead span{
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500 !important;
+}
+.ws--email-table tr {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 2px solid #E7E8E9;
+  border-radius: 9px;
+ 
+}
+.ws--email-table tr td {
+  padding: 15px 30px;
+}
+
+.ws--email-table tr .mail-column .mail-icon {
+  color: #A936E2;
+  font-size: 21px;
+  background-color: rgb(243 222 253);
+  padding: 4px;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+.ws--email-table tr .mail-column .copy-icon {
+  color: #9f9f9f;
+}
+.ws--email-table tr .mail-column .mail {
+  font-size: 17px;
+  color: #000;
+  font-weight: 500;
+}
+.ws--email-table tr .status-column{
+  text-align: right;
+}
+.ws--email-table tr .status-column .status-btn {
+  background-color: #77E59C;
+  padding: 6px 20px;
+  border-radius: 34px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.ws--email-table tr .status-column .status-collected {
+  background-color: #FF8484;
+
+}
+.dlt-btn {
+  color: #FF8484;
+  font-size: 20px;
+}
+
+.ws--email-table tr .time-column{
+  text-align: center;
+}
+.ws--email-table tr .time-column i {
+  font-size: 18px;
+  color: #9f9f9f;
+}
+.ws--email-table tr .time-column span {
+  color: #9f9f9f;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+
+ /* Css of Settings.html are start from here */
+ .ws--settings-section{
+  padding-bottom: 80px !important;
+
+ }
+ .ws--setings-content {
+  background: #fff;
+  border: 3px solid #6F69B7;
+  height: 600px;
+  border-radius: 9px;
+  
+}
+
+.ws--settings-switcher {
+  border: none;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-radius: 8px 8px 0 0;
+  padding: 10px 20px;
+}
+.ws--settings-switcher label {
+  font-size: 18px;
+}
+.ws--settings-p{
+  font-size: 23px ;
+  color:#131826 ;
+  text-align: center;
+  font-weight: 400;
+
+ 
+}
+
